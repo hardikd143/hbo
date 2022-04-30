@@ -20,7 +20,7 @@ const Navbar = () => {
     }
   };
   return (
-    <nav onMouseOver={handleSubmenu}>
+    <nav onMouseMove={handleSubmenu} >
       <div className="nav-right d-flex align-items-center">
         <Logo />
         <ul className="nav-links ">
