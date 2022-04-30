@@ -1,0 +1,75 @@
+:root {
+  --primary: rgb(94, 39, 201);
+  --primary-500: rgba(94, 39, 201, 0.5);
+  --primary-300: rgba(94, 39, 201, 0.3);
+  --primary-100: rgba(94, 39, 201, 0.1);
+  --secondary: rgb(68, 203, 134);
+  --secondary-hover: rgb(57, 170, 112);
+  --black: rgb(40, 46, 51);
+  --black-500: rgba(40, 46, 51, 0.5);
+  --black-300: rgba(40, 46, 51, 0.3);
+  --black-100: rgba(40, 46, 51, 0.1);
+  --white: #fff;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --transition: all 0.3s linear;
+  --grey-5: hsl(210, 22%, 49%);
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, */
+  /* Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  background: var(--primary) !important;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none !important;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+.primary-color {
+  color: var(--primary) !important;
+}
+
+.btn {
+  background: var(--secondary) !important;
+  color: var(--white) !important;
+  &.btn-black {
+    background: var(--black) !important;
+  }
+  &.btn-sm {
+    font-size: 0.8rem !important;
+    padding: 0.3rem 1.5rem !important;
+  }
+  &.btn-md {
+    font-size: 1rem !important;
+    padding: 0.3rem 1.6rem !important;
+  }
+  &.btn-lg {
+    font-size: 1.2rem !important;
+    padding: 0.3rem 1.7rem !important;
+  }
+  &:hover {
+    background-color: var(--secondary-hover) !important;
+  }
+}
