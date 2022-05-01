@@ -1,0 +1,33 @@
+.error-page {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  .header {
+    .header-inner {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        text-transform: capitalize;
+      }
+    }
+    border-bottom: 1px solid #e6eaf0;
+  }
+
+  .error-body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2rem;
+      .error-text{
+          color: var(--primary);
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: 600;
+          h2{
+              font-size: 2.3rem;
+          }
+      }
+  }
+}

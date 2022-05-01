@@ -10,7 +10,7 @@ import {
   Guides,
   Resources,
   Home,
-  Login,Error
+  Login,Error,SupportHelp
 } from "./Pages/index";
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
           <Route path="resources" element={<Resources />} />
           <Route path="guides" element={<Guides />} />
         </Route>
+          <Route path="/support/home" element={<SupportHelp />} />
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/*" element={<Error/>}/>
       </Routes>

@@ -1,9 +1,11 @@
 import React from "react";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 import "../css/navbar.scss";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { useGlobalContext } from "../context";
 const Navbar = () => {
+
   const { openSubmenu, closeSubmenu, toggleSubmodal, isSubmodalOpen } =
     useGlobalContext();
 
@@ -22,7 +24,7 @@ const Navbar = () => {
   return (
     <nav onMouseMove={handleSubmenu} >
       <div className="nav-right d-flex align-items-center">
-        <Logo />
+        <Logo type="logo-white"/>
         <ul className="nav-links ">
           <li>
             <button className="link-btn" onMouseOver={displaySubmenu}>
@@ -37,9 +39,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="nav-left d-flex align-items-center">
-        <a href="/login" className="btn btn-login btn-sm">
+        <Link to="/login" className="btn btn-login btn-sm btn-green">
           login
-        </a>
+        </Link>
+        <Link to="/support/home" className="help-link text-white text-capitalize">
+            help
+          </Link>
         {isSubmodalOpen ? (
           <IoIosClose className="menu-icon " onClick={toggleSubmodal} />
         ) : (

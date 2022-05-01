@@ -8,6 +8,7 @@ import Home from "./Home";
 import Login from "./Login";
 import Resources from "./Resources";
 import Error from "./Error";
+import SupportHelp from "./SupportHelp";
 export {
   BikeInsurance,
   ArogyaSanjeevani,
@@ -18,5 +19,6 @@ export {
   Resources,
   Home,
   Login,
-  Error
+  Error,
+  SupportHelp
 };

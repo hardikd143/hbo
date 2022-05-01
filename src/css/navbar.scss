@@ -4,18 +4,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   .nav-right {
-    .nav-logo {
-      background: white;
-      color: var(--primary);
-      height: 38px;
-      padding: 0 0.5rem;
-      border-radius: 0.2rem;
-      display: inline-block;
-      h2 {
-        margin: 0 !important;
-        line-height: 38px;
-      }
-    }
+    
     .nav-links {
       display: flex;
       margin: 0;
@@ -33,6 +22,8 @@ nav {
     }
   }
   .nav-left {
+    display: grid;
+    grid-gap: 2rem;
     .menu-icon {
       font-size: 2.4rem;
       color: var(--white);
