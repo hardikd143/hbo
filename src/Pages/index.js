@@ -8,7 +8,10 @@ import Home from "./Home";
 import Login from "./Login";
 import Resources from "./Resources";
 import Error from "./Error";
-import SupportHelp from "./SupportHelp";
+import HelpIndex from "./HelpIndex";
+import SingleHelpArticle from "./SingleHelpArticle";
+import HelpLayout from "./HelpLayout";
+
 export {
   BikeInsurance,
   ArogyaSanjeevani,
@@ -20,5 +23,7 @@ export {
   Home,
   Login,
   Error,
-  SupportHelp
+  HelpIndex,
+  SingleHelpArticle,
+  HelpLayout,
 };

@@ -1,0 +1,189 @@
+.inp-content {
+  // max-width: 500px;
+  margin: auto;
+  margin-bottom: 1rem;
+  @media screen and (max-width: 768px) {
+    max-width: unset;
+    width: 100%;
+  }
+  .wrapper {
+    background: var(--white);
+    position: relative;
+    padding: 0 1.2rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+
+    &.vehicle {
+      @media screen and (max-width: 768px) {
+        border: 1px solid var(--grey);
+        padding: 0.8rem !important;
+        .inner {
+          min-height: unset !important;
+        }
+      }
+    }
+    &.health {
+      @media screen and (max-width: 768px) {
+        border: none !important;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .inner {
+        padding: 0;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        p {
+          margin: 0px;
+          &.plan {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1rem;
+            color: var(--grey);
+            text-align: left;
+          }
+          &.text {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--black);
+          }
+          @media screen and (max-width: 768px) {
+            text-align: center !important;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.8rem !important;
+            &.text {
+              margin-bottom: 1rem !important;
+              font-size: 22px !important;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        border: 1px solid var(--grey);
+      }
+    }
+    .inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 78px;
+
+      input.input {
+        flex-grow: 1;
+        margin-right: 1rem;
+        padding: 1.7rem 0;
+        outline: none;
+        border: none;
+        font-size: 0.875rem;
+        caret-color: var(--primary);
+        background: transparent;
+        color: var(--black);
+        @media screen and (max-width: 768px) {
+          padding: 0;
+        }
+      }
+      .btn-input {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem !important;
+        font-weight: 600;
+        &.health-input-btn {
+          text-transform: none !important;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+        }
+        &.vehicle-input-btn {
+          @media screen and (max-width: 768px) {
+            padding: 0 !important;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            &::before {
+              display: none;
+            }
+            svg {
+              font-size: 1rem;
+            }
+          }
+        }
+        span {
+          display: inline-block;
+          margin-right: 0.5rem;
+          line-height: 2rem;
+          &:not(.health-span) {
+            @media screen and (max-width: 768px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .floatPosition {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 0;
+    }
+    .floatingPlaceHolder {
+      letter-spacing: 0.04rem;
+      color: var(--primary);
+      background: var(--white);
+      opacity: 0;
+      line-height: 1rem;
+      font-size: 0.75rem;
+      transition: all 0.2s linear;
+      &.floated {
+        opacity: 1;
+        transform: translateY(0);
+        top: 9px;
+        @media screen and (max-width: 768px) {
+          top: 0;
+          font-size: 0.85rem;
+          transform: translateY(-8px);
+        }
+      }
+    }
+    .placeHolder {
+      // height: 32px;
+      display: flex;
+      align-items: center;
+      background: var(--white);
+      &.hide {
+        display: none;
+      }
+
+      svg {
+        color: var(--grey);
+        margin-right: 0.5rem;
+        font-size: 1.6rem;
+      }
+      span {
+        color: rgb(62, 70, 81);
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .requireCarNumber {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    border-radius: var(--radius);
+    // opacity: 0;
+    transition: all 0.2s linear;
+    margin-top: -35px;
+    &.show {
+      margin-top: 10px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

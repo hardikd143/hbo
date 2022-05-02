@@ -5,21 +5,23 @@ import sublinks from "../data";
 
 const Submodal = () => {
   const {
-    page: { links },
     toggleSubmodal,
     isSubmodalOpen,
   } = useGlobalContext();
   return (
-    <div
+    <div 
       className={`container-fluid ${
         isSubmodalOpen ? "submodal show" : "submodal"
       }`}
     >
       <div className="container submodal-inner">
         <div className="btn-div mb-3 ">
-          <a href="/login" className="btn btn-md btn-black">
+          <Link to="/login" className="btn btn-md btn-black">
             login
-          </a>
+          </Link>
+          <Link to="/support/home" className="btn btn-md btn-transparent text-white text-capitalize">
+            help
+          </Link>
         </div>
         {sublinks.map((item, index) => {
           const { links, page } = item;

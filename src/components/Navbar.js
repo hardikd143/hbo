@@ -5,7 +5,6 @@ import "../css/navbar.scss";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { useGlobalContext } from "../context";
 const Navbar = () => {
-
   const { openSubmenu, closeSubmenu, toggleSubmodal, isSubmodalOpen } =
     useGlobalContext();
 
@@ -22,38 +21,43 @@ const Navbar = () => {
     }
   };
   return (
-    <nav onMouseMove={handleSubmenu} >
-      <div className="nav-right d-flex align-items-center">
-        <Logo type="logo-white"/>
-        <ul className="nav-links ">
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              products
-            </button>
-          </li>
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              resources
-            </button>
-          </li>
-        </ul>
-      </div>
-      <div className="nav-left d-flex align-items-center">
-        <Link to="/login" className="btn btn-login btn-sm btn-green">
-          login
-        </Link>
-        <Link to="/support/home" className="help-link text-white text-capitalize">
+    <nav onMouseMove={handleSubmenu}>
+      <div className="container">
+        <div className="nav-right d-flex align-items-center">
+          <Logo type="logo-white" />
+          <ul className="nav-links ">
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                products
+              </button>
+            </li>
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                resources
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div className="nav-left d-flex align-items-center">
+          <Link to="/login" className="btn btn-login btn-sm btn-green">
+            login
+          </Link>
+          <Link
+            to="/support/home"
+            className="btn-help text-white text-capitalize"
+          >
             help
           </Link>
-        {isSubmodalOpen ? (
-          <IoIosClose className="menu-icon " onClick={toggleSubmodal} />
-        ) : (
-          <IoIosMenu
-            className="menu-icon"
-            style={{ transform: "scaleX(0.8)" }}
-            onClick={toggleSubmodal}
-          />
-        )}
+          {isSubmodalOpen ? (
+            <IoIosClose className="menu-icon " onClick={toggleSubmodal} />
+          ) : (
+            <IoIosMenu
+              className="menu-icon"
+              style={{ transform: "scaleX(0.8)" }}
+              onClick={toggleSubmodal}
+            />
+          )}
+        </div>
       </div>
     </nav>
   );

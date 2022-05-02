@@ -1,0 +1,188 @@
+.home-main {
+  margin: auto;
+  text-align: center;
+  color: var(--white);
+  max-width: 520px;
+  @media screen and (max-width: 768px) {
+    color: var(--black);
+  }
+  .home-content {
+    margin: 2rem 0 1.5rem 0;
+    h2 {
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.02rem;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: inherit;
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      font-weight: 500;
+      margin: 0px;
+      font-size: 0.875rem;
+      letter-spacing: 0.02em;
+      color: var(--black-700);
+    }
+  }
+  .home-tab-btns {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    @media screen and (max-width: 768px) {
+      color: var(--black);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .homeTab-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100px;
+      min-width: 80px;
+      padding: 0 0.5rem;
+      color: #cebeef;
+      border-bottom: 2px solid #7c47e1;
+      @media screen and (max-width: 768px) {
+        height: unset;
+        border-color: #d6d9e0;
+      }
+      @media screen and (min-width: 768px) {
+        &:hover {
+          color: var(--white);
+        }
+      }
+      &.active {
+        color: var(--black);
+
+        border-bottom: 2px solid var(--white);
+        @media screen and (max-width: 768px) {
+          border-bottom: 2px solid var(--primary);
+        }
+        .tab-icon {
+          background: var(--white);
+          color: var(--primary);
+        }
+        .tab-title {
+          color: var(--white);
+        }
+        @media screen and (max-width: 768px) {
+          .tab-icon {
+            background: var(--primary);
+            color: var(--white);
+          }
+          .tab-title {
+            color: var(--primary);
+          }
+        }
+      }
+      .tab-icon {
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+        display: grid;
+        place-items: center;
+        font-size: 1.7rem;
+      }
+      .tab-title {
+        font-size: 14px;
+        margin: 12px 0;
+        font-weight: 500;
+      }
+      @media screen and (max-width: 768px) {
+        .tab-icon {
+          color: var(--black);
+        }
+        .tab-title {
+          color: var(--black);
+          margin: 6px 0 10px 0;
+        }
+      }
+    }
+  }
+  .home-tab-content {
+    padding: 1rem 0;
+    .tab-content {
+      display: none;
+      transform: translateY(50px);
+
+      &.show {
+        display: block;
+        animation: tabContent 0.5s forwards;
+      }
+      @keyframes tabContent {
+        from {
+          transform: translateY(50px);
+        }
+        to {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+}
+.op {
+  @media screen and (max-width: 768px) {
+    padding: 0 !important;
+    background: rgb(124, 71, 225);
+  }
+}
+.official-partner {
+  max-width: 500px;
+  color: var(--white);
+  background: rgb(124, 71, 225);
+  margin: auto;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  .inner {
+    padding: 1rem;
+    background: linear-gradient(
+      rgba(44, 9, 112, 0.7) 0%,
+      rgba(44, 9, 112, 0.12) 57.41%,
+      rgba(255, 61, 103, 0.05) 104.26%
+    );
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        // grid-template-columns: repeat(6, 1fr);
+        @media screen and (max-width: 768px) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-row-gap: 1.5rem;
+      }
+
+      div.img {
+          text-align: center;
+        padding: 0 0.4rem;
+        max-height: 46px;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    background: linear-gradient(
+      rgba(44, 9, 112, 0.7) 0%,
+      rgba(44, 9, 112, 0.12) 57.41%,
+      rgba(255, 61, 103, 0.05) 104.26%
+    );
+    margin: 0 !important;
+    max-width: unset;
+    border-radius: 0px;
+    .inner {
+      background: none;
+      margin: auto;
+      max-width: 520px;
+    }
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}

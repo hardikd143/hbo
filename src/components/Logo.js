@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Logo = ({ type }) => {
-  console.log(type);
   return (
     <Link to={"/"} className={`main-logo ${type}`}>
       <h2>HBO</h2>

@@ -7,6 +7,7 @@ const AppProvider = ({ children }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [page, setPage] = useState({ page: "", links: [] });
   const [location, setLocation] = useState({});
+  // const [homeBody,setHomeBody]= useState()
   const toggleSubmodal = () => {
     setIsSubmodalOpen(!isSubmodalOpen);
   };

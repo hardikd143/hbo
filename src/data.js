@@ -3,10 +3,10 @@ import {
   RiMentalHealthLine,
   RiGuideLine,
   RiHealthBookLine,
-} from "react-icons/ri";
-import { AiOutlineCar } from "react-icons/ai";
-import { MdOutlineArticle } from "react-icons/md";
-import { BiBookContent } from "react-icons/bi";
+  AiOutlineCar,
+  MdOutlineArticle,
+  BiBookContent,
+} from './icons'
 import React from "react";
 const sublinks = [
   {

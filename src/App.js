@@ -10,7 +10,11 @@ import {
   Guides,
   Resources,
   Home,
-  Login,Error,SupportHelp
+  Login,
+  Error,
+  HelpIndex,
+  SingleHelpArticle,
+  HelpLayout
 } from "./Pages/index";
 
 function App() {
@@ -27,9 +31,13 @@ function App() {
           <Route path="resources" element={<Resources />} />
           <Route path="guides" element={<Guides />} />
         </Route>
-          <Route path="/support/home" element={<SupportHelp />} />
-        <Route path="/login" element={<Login/>}></Route>
-        <Route path="/*" element={<Error/>}/>
+        <Route path="/support/home" element={<HelpLayout/>}>
+          <Route index element={<HelpIndex />}/>
+          {/* <Route path="article/:id-:name" element={<SingleHelpArticle />}/> */}
+          <Route path="article/:id" element={<SingleHelpArticle />}/>
+        </Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
