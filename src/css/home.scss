@@ -43,7 +43,7 @@
       min-width: 80px;
       padding: 0 0.5rem;
       color: #cebeef;
-      border-bottom: 2px solid #7c47e1;
+      border-bottom: 2px solid var(--primary-light);
       @media screen and (max-width: 768px) {
         height: unset;
         border-color: #d6d9e0;
@@ -125,19 +125,22 @@
 .op {
   @media screen and (max-width: 768px) {
     padding: 0 !important;
-    background: rgb(124, 71, 225);
+    background: var(--purple);
   }
 }
 .official-partner {
   max-width: 500px;
   color: var(--white);
-  background: rgb(124, 71, 225);
+  background: var(--purple);
   margin: auto;
   border: 1px solid #f0f0f0;
   border-radius: 0.75rem;
   overflow: hidden;
   .inner {
     padding: 1rem;
+    // var(--primary) 0%,
+    // var(--primary-500) 57.41%,
+    // var(--black-300) 104.26%
     background: linear-gradient(
       rgba(44, 9, 112, 0.7) 0%,
       rgba(44, 9, 112, 0.12) 57.41%,
