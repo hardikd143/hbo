@@ -7,8 +7,8 @@ const AppProvider = ({ children }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [page, setPage] = useState({ page: "", links: [] });
   const [location, setLocation] = useState({});
-  const [darkTheme, setDarkTheme] = useState(true);
-  // const [homeBody,setHomeBody]= useState()
+  // by default theme will be light
+  const [darkTheme, setDarkTheme] = useState(false);
   const toggleSubmodal = () => {
     setIsSubmodalOpen(!isSubmodalOpen);
   };
@@ -42,7 +42,7 @@ const AppProvider = ({ children }) => {
         page,
         location,
         darkTheme,
-        changeTheme
+        changeTheme,
       }}
     >
       {children}
