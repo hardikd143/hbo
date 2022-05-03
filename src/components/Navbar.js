@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 import "../css/navbar.scss";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { useGlobalContext } from "../context";
+import ThemeButton from "./ThemeButton";
 const Navbar = () => {
-  const { openSubmenu, closeSubmenu, toggleSubmodal, isSubmodalOpen } =
-    useGlobalContext();
+  const {
+    openSubmenu,
+    closeSubmenu,
+    toggleSubmodal,
+    isSubmodalOpen,
+  } = useGlobalContext();
 
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
@@ -20,8 +25,9 @@ const Navbar = () => {
       closeSubmenu();
     }
   };
+  
   return (
-    <nav onMouseMove={handleSubmenu}>
+    <nav onMouseMove={handleSubmenu }>
       <div className="container">
         <div className="nav-right d-flex align-items-center">
           <Logo type="logo-white" />
@@ -39,6 +45,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="nav-left d-flex align-items-center">
+          <ThemeButton />
           <Link to="/login" className="btn btn-login btn-sm btn-green">
             login
           </Link>

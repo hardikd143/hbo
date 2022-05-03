@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import Logo from "../components/Logo";
 import "../css/error.scss";
 import errorImg from "../img/error.svg";
-
 const Error = () => {
   return (
     <div className="error-page">
       <header className="header">
         <div className="container header-inner">
           <Logo type="logo-purple" />
-          <Link to="/support/home" className="help-link color-primary">
+          <Link to="/support/home" className="help-link ">
             help
           </Link>
         </div>

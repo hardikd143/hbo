@@ -1,4 +1,5 @@
 nav {
+  color: #fff;
   .container {
     height: 80px;
     display: flex;
@@ -15,7 +16,7 @@ nav {
           background: transparent;
           border-color: transparent;
           font-size: 1.1rem;
-          color: white;
+          color: inherit !important;
           text-transform: capitalize;
           letter-spacing: 1px;
           width: 10rem;
@@ -75,10 +76,6 @@ nav {
     &:hover {
       background: var(--black-100);
     }
-    &:active {
-      background: var(--black-500);
-      color: var(--white);
-    }
     svg {
       margin-right: 1rem;
     }
@@ -110,10 +107,22 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .btn-login-submodal {
+        background: var(--primary) !important;
+        &::before{
+          display: none;
+        }
+      }
+      .btn-help-submodal{
+        color: var(--primary) !important;
+      }
     }
     article {
       border-top: 1px solid var(--black-100);
       padding: 0.5rem 0;
+      h4 {
+        color: var(--black);
+      }
     }
     article:first-child {
       margin-bottom: 0.5rem;
@@ -137,10 +146,6 @@ nav {
         &:hover {
           background: var(--black-100);
         }
-        &:active {
-          background: var(--black-500);
-          color: var(--white);
-        }
         svg {
           margin-right: 1rem;
         }
@@ -163,5 +168,24 @@ nav {
   }
   .submodal {
     display: none !important ;
+  }
+}
+
+.theme-selector {
+  font-size: 1.25rem;
+  .theme-btn {
+    background: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--white);
+    line-height: 30px;
+    // @media screen and (max-width:768px){
+    //   color: var(--black);
+    // }
   }
 }

@@ -15,7 +15,7 @@
 
     &.vehicle {
       @media screen and (max-width: 768px) {
-        border: 1px solid var(--grey);
+        border: 1px solid var(--dark2502white);
         padding: 0.8rem !important;
         .inner {
           min-height: unset !important;
@@ -23,6 +23,7 @@
       }
     }
     &.health {
+      // background: fixed;
       @media screen and (max-width: 768px) {
         border: none !important;
         padding-top: 1rem;
@@ -96,6 +97,10 @@
           text-transform: none !important;
           @media screen and (max-width: 768px) {
             width: 100%;
+            background: var(--secondary2black) !important;
+            &::before {
+              display: none;
+            }
           }
         }
         &.vehicle-input-btn {
@@ -133,7 +138,7 @@
     }
     .floatingPlaceHolder {
       letter-spacing: 0.04rem;
-      color: var(--primary);
+      color: var(--primary2black);
       background: var(--white);
       opacity: 0;
       line-height: 1rem;
@@ -144,9 +149,14 @@
         transform: translateY(0);
         top: 9px;
         @media screen and (max-width: 768px) {
-          top: 0;
+          top: 1px;
           font-size: 0.85rem;
-          transform: translateY(-8px);
+        }
+      }
+      span{
+        span{
+          font-weight: 600 !important;
+          color: var(--primary2black);
         }
       }
     }

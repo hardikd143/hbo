@@ -4,11 +4,11 @@ import Logo from "../components/Logo";
 import "../css/help.scss";
 const HelpLayout = () => {
   return (
-    <div className="bg-white main">
+    <div className="main">
       <header>
         <div className="container">
           <div className=" h-80 d-flex align-items-center">
-            <Logo type={"logo-purple"} />
+            <Logo  />
           </div>
         </div>
       </header>

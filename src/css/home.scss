@@ -1,11 +1,8 @@
 .home-main {
   margin: auto;
   text-align: center;
-  color: var(--white);
+  color: #fff !important;
   max-width: 520px;
-  @media screen and (max-width: 768px) {
-    color: var(--black);
-  }
   .home-content {
     margin: 2rem 0 1.5rem 0;
     h2 {
@@ -13,9 +10,10 @@
       letter-spacing: 0.02rem;
       font-size: 2.5rem;
       font-weight: 800;
-      color: inherit;
+      color: #fff;
       @media screen and (max-width: 768px) {
         font-size: 1.5rem;
+        color: var(--black2white);
       }
     }
     p {
@@ -23,13 +21,15 @@
       margin: 0px;
       font-size: 0.875rem;
       letter-spacing: 0.02em;
-      color: var(--black-700);
+      @media screen and (max-width: 768px) {
+        color: var(--black2white);
+      }
     }
   }
   .home-tab-btns {
     display: flex;
     justify-content: center;
-    color: var(--white);
+    color: #fff;
     @media screen and (max-width: 768px) {
       color: var(--black);
       display: grid;
@@ -42,38 +42,30 @@
       height: 100px;
       min-width: 80px;
       padding: 0 0.5rem;
-      color: #cebeef;
-      border-bottom: 2px solid var(--primary-light);
+      color: var(--light750);
+      border-bottom: 1px solid var(--light500);
       @media screen and (max-width: 768px) {
+        border-bottom: 1px solid #d6d9e0;
+        color: var(--dark7502light500);
         height: unset;
-        border-color: #d6d9e0;
-      }
-      @media screen and (min-width: 768px) {
-        &:hover {
-          color: var(--white);
-        }
       }
       &.active {
-        color: var(--black);
-
-        border-bottom: 2px solid var(--white);
+        border-bottom: 2px solid #fff;
         @media screen and (max-width: 768px) {
-          border-bottom: 2px solid var(--primary);
+          border-bottom: 2px solid var(--primary2white);
         }
         .tab-icon {
-          background: var(--white);
-          color: var(--primary);
+          background: #fff !important;
+          color: var(--primary2black) !important;
+          @media screen and (max-width: 768px) {
+            background: var(--primary2white) !important;
+            color: var(--white2black) !important;
+          }
         }
         .tab-title {
-          color: var(--white);
-        }
-        @media screen and (max-width: 768px) {
-          .tab-icon {
-            background: var(--primary);
-            color: var(--white);
-          }
-          .tab-title {
-            color: var(--primary);
+          color: #fff !important;
+          @media screen and (max-width: 768px) {
+            color: var(--primary2white) !important;
           }
         }
       }
@@ -89,15 +81,6 @@
         font-size: 14px;
         margin: 12px 0;
         font-weight: 500;
-      }
-      @media screen and (max-width: 768px) {
-        .tab-icon {
-          color: var(--black);
-        }
-        .tab-title {
-          color: var(--black);
-          margin: 6px 0 10px 0;
-        }
       }
     }
   }
@@ -122,6 +105,22 @@
     }
   }
 }
+#body-sm {
+  background: var(--primary2black) !important;
+  @media screen and (max-width: 768px) {
+    background: var(--white2black) !important;
+    color: var(--primary) !important;
+    nav {
+      .main-logo {
+        background: var(--black2white) !important;
+        color: var(--white2black) !important;
+      }
+      svg {
+          color: var(--black2white) !important;
+      }
+    }
+  }
+}
 .op {
   @media screen and (max-width: 768px) {
     padding: 0 !important;
@@ -130,34 +129,27 @@
 }
 .official-partner {
   max-width: 500px;
-  color: var(--white);
+  color: #fff;
   background: var(--purple);
   margin: auto;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #808080;
   border-radius: 0.75rem;
   overflow: hidden;
   .inner {
     padding: 1rem;
-    // var(--primary) 0%,
-    // var(--primary-500) 57.41%,
-    // var(--black-300) 104.26%
-    background: linear-gradient(
-      rgba(44, 9, 112, 0.7) 0%,
-      rgba(44, 9, 112, 0.12) 57.41%,
-      rgba(255, 61, 103, 0.05) 104.26%
-    );
+    background: var(--d2l-gradient);
     .wrapper {
-        display: flex;
-        justify-content: space-around;
-        // grid-template-columns: repeat(6, 1fr);
-        @media screen and (max-width: 768px) {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-row-gap: 1.5rem;
+      display: flex;
+      justify-content: space-around;
+      // grid-template-columns: repeat(6, 1fr);
+      @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 1.5rem;
       }
 
       div.img {
-          text-align: center;
+        text-align: center;
         padding: 0 0.4rem;
         max-height: 46px;
         img {
@@ -167,11 +159,7 @@
     }
   }
   @media screen and (max-width: 768px) {
-    background: linear-gradient(
-      rgba(44, 9, 112, 0.7) 0%,
-      rgba(44, 9, 112, 0.12) 57.41%,
-      rgba(255, 61, 103, 0.05) 104.26%
-    );
+    background: var(--d2l-gradient);
     margin: 0 !important;
     max-width: unset;
     border-radius: 0px;

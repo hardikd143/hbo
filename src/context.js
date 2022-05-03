@@ -7,6 +7,7 @@ const AppProvider = ({ children }) => {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [page, setPage] = useState({ page: "", links: [] });
   const [location, setLocation] = useState({});
+  const [darkTheme, setDarkTheme] = useState(true);
   // const [homeBody,setHomeBody]= useState()
   const toggleSubmodal = () => {
     setIsSubmodalOpen(!isSubmodalOpen);
@@ -20,18 +21,28 @@ const AppProvider = ({ children }) => {
   const closeSubmenu = () => {
     setIsSubmenuOpen(false);
   };
-
+  const changeTheme = () => {
+    setDarkTheme(!darkTheme);
+    let htmDoc = document.querySelector("html");
+    console.log(htmDoc);
+    if (!darkTheme) {
+      htmDoc.setAttribute("data-theme", "dark");
+    } else {
+      htmDoc.setAttribute("data-theme", "light");
+    }
+  };
   return (
     <AppContext.Provider
       value={{
         isSubmodalOpen,
         toggleSubmodal,
-        
         isSubmenuOpen,
         openSubmenu,
         closeSubmenu,
         page,
         location,
+        darkTheme,
+        changeTheme
       }}
     >
       {children}

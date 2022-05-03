@@ -16,8 +16,12 @@ import {
   SingleHelpArticle,
   HelpLayout
 } from "./Pages/index";
-
+import { useGlobalContext } from "./context";
 function App() {
+  const {darkTheme}= useGlobalContext()
+  let htmDoc = document.querySelector('html')
+  let theme = darkTheme?'dark':'light'
+  htmDoc.setAttribute('data-theme',theme)
   return (
     <BrowserRouter>
       <Routes>

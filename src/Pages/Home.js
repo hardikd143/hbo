@@ -1,5 +1,4 @@
 import { React } from "react";
-// import Input from "../components/Input";
 import "../css/home.scss";
 import Helmet from "react-helmet";
 import HomeTabs from "../components/HomeTabs";
@@ -9,7 +8,7 @@ const Home = () => {
   return (
     <div className="main ">
       <Helmet
-        bodyAttributes={{ style: "background-color : #fff", id: "home-body" }}
+        bodyAttributes={{ id: "body-sm" }}
       />
       <div className="home-main">
         <div className="container">

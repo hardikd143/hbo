@@ -16,10 +16,10 @@ const Submodal = () => {
     >
       <div className="container submodal-inner">
         <div className="btn-div mb-3 ">
-          <Link to="/login" className="btn btn-md btn-black">
+          <Link to="/login" className="btn btn-login-submodal btn-md btn-black">
             login
           </Link>
-          <Link to="/support/home" className="btn btn-md btn-transparent text-white text-capitalize">
+          <Link to="/support/home" className="btn btn-help-submodal  btn-md btn-transparent text-white text-capitalize">
             help
           </Link>
         </div>

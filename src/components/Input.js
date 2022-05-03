@@ -103,7 +103,7 @@ const Input = ({ type }) => {
           <div className={`placeHolder floatPosition ${hide ? "hide" : null}`}>
             {icon()}{" "}
             <span>
-              Enter your <span className="color-primary">{type}</span> number
+              Enter your <span>{type}</span> number
             </span>
           </div>
         </div>

@@ -10,6 +10,7 @@ import { AiOutlineCar, AiOutlineArrowRight } from "react-icons/ai";
 import { MdOutlineArticle } from "react-icons/md";
 import { BiBookContent } from "react-icons/bi";
 import { FaCarSide } from "react-icons/fa";
+import {BsFillMoonFill,BsFillSunFill} from 'react-icons/bs'
 export {
   RiMotorbikeLine,
   RiMentalHealthLine,
@@ -22,4 +23,6 @@ export {
   MdOutlineArticle,
   BiBookContent,
   FaCarSide,
+  BsFillMoonFill,
+  BsFillSunFill
 };
