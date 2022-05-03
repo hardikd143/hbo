@@ -2,25 +2,7 @@
   width: 100%;
   height: 100vh;
   background: var(--white2black);
-  .header {
-    box-shadow: var(--light-shadow);
-    background: var(--white2primary);
-    .main-logo {
-      background: var(--primary2white) !important;
-      color: var(--white2primary) !important;
-    }
-    .header-inner {
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      a {
-        color: var(--primary2white);
-        text-transform: capitalize;
-      }
-    }
-    border-bottom: 1px solid var(--black-100);
-  }
+  
 
   .error-body {
     color: var(--primary2white);

@@ -5,8 +5,6 @@ import helpData from "../helpData";
 const HelpArticlePage = () => {
   const { id } = useParams();
   const art = helpData.find((item) => item.id === id);
-  console.log(id);
-  console.log(art);
   const { articleName, articleText } = art;
   return (
     <>

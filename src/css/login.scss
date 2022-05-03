@@ -1,0 +1,112 @@
+.login-page {
+  width: 100%;
+  background: var(--white2black);
+  min-height: 100vh;
+  .login-body {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding-top: 50px;
+    .wrapper {
+      max-width: 320px;
+      margin: auto;
+      text-align: center;
+      p {
+        color: var(--black2white);
+        text-align: center;
+        &.login-title {
+          padding: 0 1.25rem;
+          font-size: 1.15rem;
+          font-weight: 500;
+          margin: 0;
+          margin-top: 30px;
+        }
+        &.login-extra {
+          font-size: 0.75rem;
+          padding: 0 1.25rem;
+          font-weight: 400;
+          margin: 6px 0px 0px;
+        }
+      }
+      .login-input {
+        margin-top: 1.5rem;
+        .input {
+          padding: 1rem 1.25rem;
+          border: 1px solid var(--dark7502light500);
+          border-radius: 0.75rem;
+          display: flex;
+          align-items: center;
+          span {
+            color: var(--dark7502light750);
+          }
+          input {
+            caret-color: var(--black2white);
+            color: var(--black2white);
+            background: none;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            margin-left: 10px;
+            flex-grow: 1;
+            font-size: 1rem;
+            line-height: 18px;
+            height: 1.25rem;
+            letter-spacing: 0.04rem;
+            font-weight: 400;
+          }
+        }
+      }
+      .whatsappCheck {
+        display: flex;
+        margin: 1.25rem 0;
+        .customLabel {
+          width: 1.2rem;
+          height: 1.2rem;
+          border: 1px solid var(--dark7502light750);
+          position: relative;
+          overflow: hidden;
+          border-radius: 0.25rem;
+          &::before {
+            content: "\2713";
+            font-size: 12px;
+            font-weight: 600;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: var(--secondary2white);
+            transform: scale(0);
+            transition: all 0.2s linear;
+          }
+          &.checked {
+            &::before {
+              transform: scale(1);
+            }
+          }
+          input {
+            display: none;
+          }
+        }
+        p {
+          text-align: left;
+          font-weight: 500;
+          margin: 0px 0px 0px 10px;
+          font-size: 14px;
+          line-height: 20px;
+          color: var(--black2white);
+        }
+      }
+      button.btn-getOTP{
+          padding: 0.5rem 1.5rem !important;
+          background: var(--grey);
+          &::before{
+              border-color: var(--grey);
+          }
+          &.invalid{
+              cursor: not-allowed;
+          }
+      }
+    }
+  }
+}

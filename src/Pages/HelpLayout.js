@@ -1,15 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Logo from "../components/Logo";
+import ThemeButton from "../components/ThemeButton";
+import "../css/themeButton.scss";
 import "../css/help.scss";
 const HelpLayout = () => {
   return (
     <div className="main">
-      <header>
-        <div className="container">
-          <div className=" h-80 d-flex align-items-center">
-            <Logo  />
-          </div>
+      <header className="header common ">
+        <div className="container header-inner">
+          <Logo type="logo-purple" />
+          <ThemeButton defaultColor="primary2white" />
         </div>
       </header>
       <div className="help-body">

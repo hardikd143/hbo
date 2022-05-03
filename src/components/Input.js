@@ -4,7 +4,6 @@ import "../css/input.scss";
 import { RiMotorbikeFill, FaCarSide, AiOutlineArrowRight } from "../icons";
 
 const Input = ({ type }) => {
-  // console.log(type);
   const icon = () => {
     return type === "car" ? <FaCarSide /> : <RiMotorbikeFill />;
   };
@@ -15,7 +14,6 @@ const Input = ({ type }) => {
   const [showAlert, setShowAlert] = useState(false);
   const handlechange = (e) => {
     let value = e.target.value;
-    console.log(value);
     setInputValue(() => {
       return [value];
     });

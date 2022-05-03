@@ -1,0 +1,36 @@
+.theme-selector {
+  font-size: 1.25rem;
+  .theme-btn {
+    background: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    line-height: 30px;
+    &.white-lg{
+      @media screen and (min-width:768px) {
+        color: var(--white) !important;
+      }
+    }
+    &.black2white-sm{
+      @media screen and (max-width:768px){
+        color: var(--black2white);
+      }
+    }
+    &.primary2white{
+      color: var(--primary2white);
+    }
+    &.white {
+      color: var(--white);
+    }
+    &.primary {
+      color: var(--primary);
+    }
+    &.black {
+      color: var(--black);
+    }
+  }
+}

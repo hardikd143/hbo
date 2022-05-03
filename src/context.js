@@ -24,7 +24,6 @@ const AppProvider = ({ children }) => {
   const changeTheme = () => {
     setDarkTheme(!darkTheme);
     let htmDoc = document.querySelector("html");
-    console.log(htmDoc);
     if (!darkTheme) {
       htmDoc.setAttribute("data-theme", "dark");
     } else {

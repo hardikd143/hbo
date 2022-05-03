@@ -2,15 +2,7 @@
   width: 100%;
   min-height: 100vh;
 }
-header {
-  border-bottom: 1px solid var(--lightgrey2primary);
-  box-shadow: var(--light-shadow);
-  background: var(--white2primary);
-  .main-logo{
-    background: var(--primary2white) !important;
-    color: var(--white2primary) !important;
-  }
-}
+
 .help-body {
   min-height: calc(100vh - 80px);
   background: var(--lightgrey2black);

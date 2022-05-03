@@ -7,16 +7,16 @@ const HomeTabs = () => {
     <>
       <div className="home-tab-btns">
         {homeTabData.map((item, index) => {
+          const {id,icon,title}= item
           return (
             <div
-              key={index}
+              key={id}
               className={`homeTab-btn ${index === value ? "active" : null}`}
               onClick={() => setValue(index)}
             >
-              <div className="tab-icon">{item.icon}</div>
-              <div className="tab-title">{item.title}</div>
+              <div className="tab-icon">{icon}</div>
+              <div className="tab-title">{title}</div>
             </div>
-            //   <Input type={type} />
           );
         })}
       </div>
@@ -24,7 +24,6 @@ const HomeTabs = () => {
         {homeTabData.map((item, index) => {
           const { type } = item;
           return (
-            <>
               <div
                 key={index}
                 className={`tab-content tab-content-${index} ${
@@ -33,7 +32,6 @@ const HomeTabs = () => {
               >
                 <Input type={type} />
               </div>
-            </>
           );
         })}
       </div>

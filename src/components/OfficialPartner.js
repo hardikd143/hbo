@@ -1,7 +1,6 @@
 import React from "react";
 import OffPartnerData from "../partnerData";
 const OfficialPartner = () => {
-  console.log(OffPartnerData);
   return (
     <>
       <div className="inner">
@@ -10,12 +9,10 @@ const OfficialPartner = () => {
           <div className="wrapper">
             {OffPartnerData.map((img, index) => {
               return (
-                <>
-                  <div className="img">
-                    <img src={img.src} alt="img" key={index} />
+                  <div className="img" key={index}>
+                    <img src={img.src} alt="img"  />
                   </div>
                   
-                </>
               );
             })}
           </div>

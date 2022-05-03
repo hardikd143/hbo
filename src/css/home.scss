@@ -3,6 +3,7 @@
   text-align: center;
   color: #fff !important;
   max-width: 520px;
+
   .home-content {
     margin: 2rem 0 1.5rem 0;
     h2 {
@@ -42,8 +43,8 @@
       height: 100px;
       min-width: 80px;
       padding: 0 0.5rem;
-      color: var(--light750);
-      border-bottom: 1px solid var(--light500);
+      color: var(--white750);
+      border-bottom: 1px solid var(--white500);
       @media screen and (max-width: 768px) {
         border-bottom: 1px solid #d6d9e0;
         color: var(--dark7502light500);
@@ -139,9 +140,10 @@
     padding: 1rem;
     background: var(--d2l-gradient);
     .wrapper {
-      display: flex;
-      justify-content: space-around;
-      // grid-template-columns: repeat(6, 1fr);
+      // display: flex ;
+      // justify-content: space-around;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
       @media screen and (max-width: 768px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

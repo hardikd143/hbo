@@ -1,4 +1,10 @@
 :root {
+  --white: #fff;
+  --white750: rgb(255, 255, 255, 0.75);
+  --white500: rgb(255, 255, 255, 0.5);
+  --black: rgb(32, 32, 32);
+  --black100: rgba(32, 32, 32, 0.1);
+  --black500: rgba(32, 32, 32, 0.5);
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   --transition: all 0.3s linear;
@@ -12,17 +18,10 @@
     rgba(44, 9, 112, 0.12) 57.41%,
     rgba(255, 61, 103, 0.05) 104.26%
   );
-  --light750: rgb(255, 255, 255, 0.75);
-  --light500: rgb(255, 255, 255, 0.5);
-  --primarylight: rgb(125, 81, 212);
   --primary: rgb(93, 38, 201);
+  --primarylight: rgb(125, 81, 212);
   --secondary: rgb(68, 203, 134);
   &[data-theme="light"] {
-    --black: rgb(32, 32, 32);
-    --black-100: rgba(32, 32, 32, 0.1);
-    --white: #fff;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     --white2primary: #fff;
     --white2black: #fff;
     --primary2white: rgb(93, 38, 201);
@@ -32,9 +31,11 @@
     --lightgrey2black: #d3d3d3;
     --lightgrey2primary: #d3d3d3;
     --secondary2black: rgb(68, 203, 134);
+    --secondary2white: rgb(68, 203, 134);
     --dark250: rgb(32, 32, 32, 0.25);
     --dark7502light500: rgb(32, 32, 32, 0.75);
     --dark7502light750: rgb(32, 32, 32, 0.75);
+    --dark5002light750: rgb(32,32,32, 0.5);
     --dark2502white: rgb(32, 32, 32, 0.25);
     --d2l-gradient: linear-gradient(
       rgba(44, 9, 112, 0.7) 0%,
@@ -43,9 +44,6 @@
     );
   }
   &[data-theme="dark"] {
-    --black: rgb(32, 32, 32);
-    --black-100: rgba(32, 32, 32, 0.1);
-    --white: #fff;
     --white2primary: rgb(93, 38, 201);
     --white2black: rgb(32, 32, 32);
     --primary2white: #fff;
@@ -55,7 +53,10 @@
     --lightgrey2black: rgb(32, 32, 32);
     --lightgrey2primary: rgb(93, 38, 201);
     --secondary2black: rgb(32, 32, 32);
+    --secondary2white: #fff;
     --dark7502light500: rgb(255, 255, 255, 0.5);
+    --dark7502light750: rgb(255, 255, 255, 0.75);
+    --dark5002light750: rgb(255, 255, 255, 0.75);
     --dark2502white: #fff;
     --d2l-gradient: linear-gradient(
       rgb(93, 38, 201),
@@ -191,4 +192,22 @@ h4 {
 .red-alert {
   background: rgb(255, 233, 238);
   color: rgb(229, 0, 49);
+}
+
+.header.common {
+  background: var(--white2primary);
+  .main-logo {
+    background: var(--primary2white) !important;
+    color: var(--white2primary) !important;
+  }
+  .header-inner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      color: var(--primary2white);
+      text-transform: capitalize;
+    }
+  }
 }
