@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav onMouseMove={handleSubmenu}>
-      <div className="container">
+      <div className="container-lg">
         <div className="nav-right d-flex align-items-center">
           <Logo type="logo-white" />
           <ul className="nav-links ">

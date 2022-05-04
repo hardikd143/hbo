@@ -8,7 +8,7 @@ const Error = () => {
   return (
     <div className="error-page">
       <header className="header common">
-        <div className="container header-inner">
+        <div className="container-lg header-inner">
           <Logo type="logo-purple" />
           <div className="d-flex align-items-center">
             <Link to="/support/home" className="me-3">

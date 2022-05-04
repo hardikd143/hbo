@@ -1,8 +1,9 @@
 :root {
   --white: #fff;
-  --light2:#f6f7fb;
+  --light2: #f6f7fb;
   --white750: rgb(255, 255, 255, 0.75);
   --white500: rgb(255, 255, 255, 0.5);
+  --white250: rgb(255, 255, 255, 0.25);
   --black: rgb(32, 32, 32);
   --black100: rgba(32, 32, 32, 0.1);
   --black500: rgba(32, 32, 32, 0.5);
@@ -26,40 +27,57 @@
     --white2primary: #fff;
     --white2black: #fff;
     --primary2white: rgb(93, 38, 201);
+    --primarylight2light500: rgb(125, 81, 212);
+    --primarylight2white: rgb(125, 81, 212);
     --black2white: rgb(32, 32, 32);
+    --softblack2white:rgb(50,50,50);
     --primary2black: rgb(93, 38, 201);
     --black2primary: rgb(32, 32, 32);
     --lightgrey2black: #d3d3d3;
-    --light22light750:#ececec;
+    --light22light750: #ececec;
     --lightgrey2primary: #d3d3d3;
     --secondary2black: rgb(68, 203, 134);
     --secondary2white: rgb(68, 203, 134);
     --dark250: rgb(32, 32, 32, 0.25);
     --dark7502light500: rgb(32, 32, 32, 0.75);
     --dark7502light750: rgb(32, 32, 32, 0.75);
-    --dark5002light750: rgb(32,32,32, 0.5);
+    --dark5002light750: rgb(32, 32, 32, 0.75);
+    --dark5002light500: rgb(32, 32, 32, 0.5);
+    --dark2502light250: rgb(32, 32, 32, 0.25);
+    --dark1002light100: rgb(32, 32, 32, 0.10);
+    --dark2002light200: rgb(32, 32, 32, 0.20);
+    --light2502dark250:rgb(255,255,255,0.25);
     --dark2502white: rgb(32, 32, 32, 0.25);
     --d2l-gradient: linear-gradient(
       rgba(44, 9, 112, 0.7) 0%,
       rgba(44, 9, 112, 0.12) 57.41%,
       rgba(255, 61, 103, 0.05) 104.26%
-    );
-  }
+      );
+    }
   &[data-theme="dark"] {
     --white2primary: rgb(93, 38, 201);
     --white2black: rgb(32, 32, 32);
     --primary2white: #fff;
+    --primarylight2light500: rgb(255, 255, 255, 0.5);
+    --primarylight2white: rgb(255, 255, 255);
     --primary2black: rgb(32, 32, 32);
     --black2white: #fff;
+    --softblack2white:#fff;
     --black2primary: rgb(93, 38, 201);
     --lightgrey2black: rgb(32, 32, 32);
-    --light22light750:rgb(255, 255, 255, 0.75);
+    --light22light750: rgb(255, 255, 255, 0.75);
     --lightgrey2primary: rgb(93, 38, 201);
     --secondary2black: rgb(32, 32, 32);
     --secondary2white: #fff;
     --dark7502light500: rgb(255, 255, 255, 0.5);
     --dark7502light750: rgb(255, 255, 255, 0.75);
     --dark5002light750: rgb(255, 255, 255, 0.75);
+    --dark5002light500: rgb(255, 255, 255, 0.5);
+    
+    --dark2502light250: rgb(255, 255, 255, 0.25);
+    --dark1002light100: rgb(255, 255, 255, 0.10);
+    --dark2002light200: rgb(255, 255, 255, 0.20);
+    --light2502dark250:rgb(32,32,32,0.25);
     --dark2502white: #fff;
     --d2l-gradient: linear-gradient(
       rgb(93, 38, 201),
@@ -116,8 +134,9 @@ h4 {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border: 1px solid;
     border-radius: var(--radius);
     transition: all 0.2s linear;
@@ -163,7 +182,8 @@ h4 {
     &:hover {
       // opacity: 0.9;
       &::before {
-        transform: scale(1.1, 1.3);
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
       }
     }
   }
@@ -175,7 +195,7 @@ h4 {
   }
   &.logo-white {
     background: var(--white);
-    color: var(--primary);
+    color: var(--primary2black);
   }
   height: 38px;
   padding: 0 0.5rem;
@@ -191,7 +211,9 @@ h4 {
 .h-80 {
   height: 80px;
 }
-
+.max-w-520 {
+  max-width: 520px;
+}
 .red-alert {
   background: rgb(255, 233, 238);
   color: rgb(229, 0, 49);

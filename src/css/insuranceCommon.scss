@@ -1,0 +1,119 @@
+.insurance-main {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--white250);
+  .main-left {
+    flex-grow: 1;
+    max-width: 700px;
+    &.health-ins {
+      button {
+        margin-top: 2rem !important;
+      }
+    }
+    @media screen and (max-width: 940px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      &.health-ins {
+        padding: 1.5rem 0;
+        text-align: center;
+        button {
+          margin-top: 2rem !important;
+        }
+      }
+      margin: auto;
+    }
+    .insuranceTitle-main {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.02rem;
+      font-weight: 600;
+      color: var(--white);
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+    .insuranceTitle-secondary {
+      margin: 0.5rem 0 0;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1rem;
+      letter-spacing: 0.01rem;
+      color: var(--white);
+    }
+    .insuranceContent {
+      margin-top: 1.6rem;
+    }
+  }
+  .main-right {
+    max-width: 360px;
+    img {
+      width: 100%;
+      @media screen and (max-width: 940px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.Insurance-Section {
+  padding: 1rem 0;
+  background: var(--white2black);
+  .InsBreadCrumb {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--dark7502light750) !important;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    a {
+      color: var(--dark7502light750) !important;
+    }
+  }
+  .InsHeading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--softblack2white);
+    @media screen and (max-width:768px) {
+      font-size: 1.4rem;
+      
+    }
+  }
+  .InsTab {
+    .tabButton-wrapper {
+      border-bottom: 1px solid var(--dark2002light200);
+      .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 600px;
+        margin: auto;
+        .tabButton {
+          // max-width: 220px;
+          line-height: 3rem;
+          border: none;
+          outline: none;
+          background: none;
+          font-weight: 700;
+          font-size: 1.15rem;
+          padding: 0 1rem;
+          color: var(--dark5002light500);
+          border-bottom: 3px solid transparent;
+          white-space: nowrap;
+          &.active {
+            color: var(--primary2white);
+            border-bottom-color: var(--primary2white);
+          }
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          .tabButton {
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

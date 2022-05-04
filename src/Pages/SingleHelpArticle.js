@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import helpData from "../helpData";
+import helpData from "../data/helpData";
 
 const HelpArticlePage = () => {
   const { id } = useParams();

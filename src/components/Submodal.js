@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
-import sublinks from "../data";
+import sublinks from "../data/data";
 
 const Submodal = () => {
   const {

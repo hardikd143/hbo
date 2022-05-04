@@ -1,5 +1,5 @@
 import React from "react";
-import OffPartnerData from "../partnerData";
+import OffPartnerData from "../data/partnerData";
 const OfficialPartner = () => {
   return (
     <>

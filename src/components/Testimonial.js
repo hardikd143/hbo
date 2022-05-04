@@ -1,8 +1,7 @@
 import React from "react";
-import testimonialData from "../testimonialData";
+import testimonialData from "../data/testimonialData";
 import ratingImg from "../img/rating.svg";
 const Testimonial = () => {
-  console.log(testimonialData);
   return (
     <div className="testimonial-Wrapper">
       <div className="inner">

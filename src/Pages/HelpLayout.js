@@ -8,7 +8,7 @@ const HelpLayout = () => {
   return (
     <div className="main">
       <header className="header common ">
-        <div className="container header-inner">
+        <div className="container-lg header-inner">
           <Logo type="logo-purple" />
           <ThemeButton defaultColor="primary2white" />
         </div>

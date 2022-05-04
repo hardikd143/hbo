@@ -7,10 +7,12 @@
   min-height: calc(100vh - 80px);
   background: var(--lightgrey2black);
   padding: 1rem;
-
+  @media screen and (max-width:600px) {
+    padding: 1rem 0;
+  }
   section.wrapper {
     max-width: 958px;
-    padding: 0.7rem;
+    padding: 0.7rem ;
     border: 1px solid var(--white2primary);
     margin: auto;
     border-radius: 0.5rem;

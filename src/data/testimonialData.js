@@ -1,7 +1,7 @@
-import p1 from "./img/person1.png";
-import p2 from "./img/person2.png";
-import p3 from "./img/person3.png";
-import p4 from "./img/person4.png";
+import p1 from "../img/person1.png";
+import p2 from "../img/person2.png";
+import p3 from "../img/person3.png";
+import p4 from "../img/person4.png";
 const testimonialData = [
   {
     id: 1,

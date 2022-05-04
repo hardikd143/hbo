@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="main ">
       <Helmet bodyAttributes={{ id: "body-sm" }} />
-      <div className="home-main">
+      <div className="home-main max-w-520">
         <div className="container">
           <div className="home-content">
             <h2>Insurance made easy</h2>

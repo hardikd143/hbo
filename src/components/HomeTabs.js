@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Input from "./Input";
-import homeTabData from "../homeTabData";
+import homeTabData from "../data/homeTabData";
 const HomeTabs = () => {
   const [value, setValue] = useState(0);
   return (

@@ -6,7 +6,7 @@ import {
   AiOutlineCar,
   MdOutlineArticle,
   BiBookContent,
-} from './icons'
+} from '../icons'
 import React from "react";
 const sublinks = [
   {

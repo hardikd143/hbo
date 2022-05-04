@@ -1,4 +1,4 @@
-import { RiMotorbikeFill, RiHeartPulseFill, FaCarSide } from "../src/icons";
+import { RiMotorbikeFill, RiHeartPulseFill, FaCarSide } from "../icons";
 const homeTabData = [
   {
     id: '1',

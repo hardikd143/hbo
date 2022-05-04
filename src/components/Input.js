@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/input.scss";
-import { RiMotorbikeFill, FaCarSide, AiOutlineArrowRight } from "../icons";
+import { RiMotorbikeFill, FaCarSide, AiOutlineArrowRight,MdOutlineKeyboardArrowRight } from "../icons";
 
 const Input = ({ type }) => {
   const icon = () => {
@@ -39,6 +39,7 @@ const Input = ({ type }) => {
       setShowAlert(false);
     }
   };
+
   if (type === "health") {
     return (
       <div className="inp-content">
@@ -55,7 +56,9 @@ const Input = ({ type }) => {
               to="/login"
               className="btn btn-lg btn-green btn-input health-input-btn"
             >
-              <span className="health-span text-center w-100 d-inline-block">Get a quote</span>
+              <span className="health-span text-center w-100 d-inline-block">
+                Get a quote
+              </span>
             </Link>
           </div>
         </div>
@@ -66,9 +69,12 @@ const Input = ({ type }) => {
     <>
       <div className="inp-content">
         <div className="wrapper vehicle mt-2">
-          <form className="inner" onSubmit={(e)=>{
-              e.preventDefault()
-          }}>
+          <form
+            className="inner"
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
             <input
               type="text"
               className="input"
@@ -109,6 +115,26 @@ const Input = ({ type }) => {
           className={`requireCarNumber  red-alert ${showAlert ? "show" : null}`}
         >
           <p>We require your Car number!</p>
+        </div>
+        <div className="customOR ">
+          <div className="line"></div>
+          <p>or</p>
+          <div className="line"></div>
+        </div>
+        <div className="lookingToInsure">
+          <div className="inner">
+            <div className="icon">{icon()}</div>
+            <div className="content ps-2">
+              <p className="title-1">Looking to insure your new {type}?</p>
+              <p className="title-2">
+                Save big with our zero commission insurance
+              </p>
+            </div>
+            <button className="btn btn-md btn-transparent btn-input quote-btn ms-2">
+              <span>Get a quote</span>
+              <MdOutlineKeyboardArrowRight />
+            </button>
+          </div>
         </div>
       </div>
     </>

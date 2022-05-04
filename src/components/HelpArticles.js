@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import helpData from "../helpData";
+import helpData from "../data/helpData";
 import {IoIosArrowForward} from 'react-icons/io'
 const HelpArticle = () => {
   return (

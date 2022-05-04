@@ -153,8 +153,8 @@
           font-size: 0.85rem;
         }
       }
-      span{
-        span{
+      span {
+        span {
           font-weight: 600 !important;
           color: var(--primary2black);
         }
@@ -189,11 +189,135 @@
     // opacity: 0;
     transition: all 0.2s linear;
     margin-top: -35px;
+    margin-bottom: 0;
     &.show {
       margin-top: 10px;
     }
     p {
       margin: 0;
+    }
+  }
+  .customOR {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      margin-top: 0.5rem;
+    }
+    .line {
+      width: 81px;
+      max-width: 81px;
+      border: 1px solid var(--white500);
+      @media screen and (max-width: 768px) {
+        border-color: var(--dark2502light250);
+        max-width: 40px;
+      }
+    }
+    p {
+      display: inline-block;
+      padding: 0 0.4rem 0;
+      margin: 0;
+      font-size: 0.75rem;
+      color: var(--white);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+  .lookingToInsure {
+    border: 1px solid var(--primarylight2light500);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    @media screen and (max-width: 768px) {
+    }
+    .inner {
+      display: flex;
+      .icon {
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+        background: var(--primarylight2white);
+        border-radius: 50%;
+        svg {
+          width: 2rem !important;
+          color: var(--white2black);
+        }
+      }
+      .content {
+        flex-grow: 1;
+        .title-1 {
+          margin: 0px;
+          font-weight: bold;
+          font-size: 0.8rem;
+          line-height: 1rem;
+          letter-spacing: 0.04rem;
+          color: var(--white);
+          text-align: left;
+          // @media screen and (max-width: 768px) {
+          //   color: var(--black2white);
+          // }
+        }
+        .title-2 {
+          margin: 0.25rem 0px 0px;
+          font-weight: normal;
+          font-size: 0.75rem;
+          line-height: 0.65rem;
+          color: rgb(236, 228, 249);
+          text-align: left;
+          // @media screen and (max-width: 768px) {
+          //   color: var(--dark7502light750);
+          // }
+        }
+      }
+      .btn {
+        color: var(--white) !important;
+        border-color: var(--white) !important;
+        @media screen and (max-width: 768px) {
+          border-color: transparent !important;
+        }
+        padding: 0.3rem 1rem !important;
+        span {
+          font-size: 1rem;
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+        svg {
+          @media screen and (min-width: 768px) {
+            display: none;
+          }
+          font-size: 1.5rem;
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+#body-sm {
+  @media screen and (max-width: 768px) {
+    .customOR {
+      p {
+        color: var(--black2white);
+      }
+    }
+    .lookingToInsure {
+      border-color: var(--dark2502light250);
+
+      .title-1 {
+        color: var(--black2white);
+      }
+      .title-2 {
+        color: var(--dark7502light750);
+      }
+      .btn {
+        svg {
+          color: var(--black2white) !important;
+        }
+      }
     }
   }
 }
