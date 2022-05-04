@@ -7,6 +7,8 @@ import personExp from "../img/person-experience.png";
 const ackoContent = [
   {
     page: "car",
+    subTitle:
+      "Save costs, comply with law, and stay hassle-free with ACKO’s online car insurance policy.",
     reasons: [
       {
         id: "carr1",
@@ -57,14 +59,37 @@ const ackoContent = [
         policyContent:
           "Exclusive on ACKO. Enjoy Comprehensive Cover benefits and superior claim experience. During claims, ACKO will pick up your car, repair it at one of our partner garages, and deliver back at no extra cost. Only catch: if you fail to inform ACKO before any claim related repairs, you will have to pay Rs. 5,000 as a deductible.",
       },
-      { id: "carp5", policyName: "Zero Depreciation - Basic", policyContent: "Sometimes called the bumper to bumper plan, includes all the benefits of a Comprehensive - Basic plan while additionally covering depreciation costs of parts. Without Zero Depreciation benefits only partial costs of some parts like fibre & plastic parts are covered." },
-      { id: "carp6", policyName: "Zero Depreciation - Smart Saver", policyContent: "Exclusive on ACKO. It has all the benefits Zero Depreciation - Basic at a discounted price. Only catch: during a claim, we pay for everything, you just pay ₹5,000 (above IRDAI/Govt. mandated charges) as a deductible. This gives upfront savings to safe drivers who think chances of them filing a claim are less." },
-      { id: "carp7", policyName: "Zero Depreciation - Super Saver", policyContent: "Exclusive on ACKO. Enjoy Comprehensive Cover & Zero Depreciation benefits (read more below) and superior claim experience. During claims, ACKO will pick up your car, repair it at one of our partner garages, and deliver back at no extra cost. Only catch: if you fail to inform ACKO before any claim related repairs, you will have to pay Rs. 5,000 as a deductible." },
-      { id: "carp8", policyName: "Personal Accident Cover", policyContent: "Personal Accident Cover is not a Car Insurance policy, but an additional cover to your car insurance. It is mandatory by law to own a Personal Accident Cover along with the Third-party Insurance Plan. It covers both permanent disability/death while driving a car." },
+      {
+        id: "carp5",
+        policyName: "Zero Depreciation - Basic",
+        policyContent:
+          "Sometimes called the bumper to bumper plan, includes all the benefits of a Comprehensive - Basic plan while additionally covering depreciation costs of parts. Without Zero Depreciation benefits only partial costs of some parts like fibre & plastic parts are covered.",
+      },
+      {
+        id: "carp6",
+        policyName: "Zero Depreciation - Smart Saver",
+        policyContent:
+          "Exclusive on ACKO. It has all the benefits Zero Depreciation - Basic at a discounted price. Only catch: during a claim, we pay for everything, you just pay ₹5,000 (above IRDAI/Govt. mandated charges) as a deductible. This gives upfront savings to safe drivers who think chances of them filing a claim are less.",
+      },
+      {
+        id: "carp7",
+        policyName: "Zero Depreciation - Super Saver",
+        policyContent:
+          "Exclusive on ACKO. Enjoy Comprehensive Cover & Zero Depreciation benefits (read more below) and superior claim experience. During claims, ACKO will pick up your car, repair it at one of our partner garages, and deliver back at no extra cost. Only catch: if you fail to inform ACKO before any claim related repairs, you will have to pay Rs. 5,000 as a deductible.",
+      },
+      {
+        id: "carp8",
+        policyName: "Personal Accident Cover",
+        policyContent:
+          "Personal Accident Cover is not a Car Insurance policy, but an additional cover to your car insurance. It is mandatory by law to own a Personal Accident Cover along with the Third-party Insurance Plan. It covers both permanent disability/death while driving a car.",
+      },
     ],
   },
   {
     page: "bike",
+    subTitle:
+      "Low-cost bike insurance plans with exciting discounts - Buy online on ACKO.",
+
     reasons: [
       {
         id: "biker1",

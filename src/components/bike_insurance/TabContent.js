@@ -3,7 +3,7 @@ import AckoInsurance from "../common_insurance/AckoInsurance";
 
 const TabContent = ({ activeTab, pageFor }) => {
   if (activeTab === 0) {
-    return <AckoInsurance page={pageFor} />;
+    return <AckoInsurance currentPage={pageFor} />;
   }
   if (activeTab === 1) {
     return <div>Buying Guide</div>;
