@@ -6,13 +6,18 @@ import OfficialPartner from "../components/OfficialPartner";
 // import FavApps from "../components/FavApps";
 import Testimonial from "../components/Testimonial";
 import FavApps from "../components/FavApps";
+import mainImg1 from "../img/main-img-1.svg";
+import mainImg2 from "../img/main-img-2.svg";
 
 const Home = () => {
   return (
     <div className="main ">
       <Helmet bodyAttributes={{ id: "body-sm" }} />
-      <div className="home-main max-w-520">
-        <div className="container">
+      <div className="home-main ">
+        <div className="home-main-img-wrapper">
+          <img src={mainImg1} className="w-100" alt="home-img" />
+        </div>
+        <div className="container max-w-520">
           <div className="home-content">
             <h2>Insurance made easy</h2>
             <p>Zero commission. Zero paperwork</p>
@@ -20,6 +25,9 @@ const Home = () => {
           <div className="home-tabs">
             <HomeTabs />
           </div>
+        </div>
+        <div className="home-main-img-wrapper">
+          <img src={mainImg2} className="w-100" alt="home-img" />
         </div>
       </div>
       <div className="container-lg op pb-md-4 pb-0 ">

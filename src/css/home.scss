@@ -2,8 +2,27 @@
   margin: auto;
   text-align: center;
   color: #fff !important;
-  // max-width: 520px;
 
+  // max-width: 520px;
+  .home-main-img-wrapper{
+    padding: 0 0.625rem;
+    text-align: center;
+    img{
+      max-width: 220px !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 520px 1fr;
+  }
+  @media screen and (max-width:768px) {
+
+    .home-main-img-wrapper{
+      display: none;
+    }
+  }
   .home-content {
     margin: 2rem 0 1.5rem 0;
     h2 {

@@ -22,15 +22,19 @@
   );
   --primary: rgb(93, 38, 201);
   --primarylight: rgb(125, 81, 212);
+  --primarydark: rgb(11, 14, 52);
   --secondary: rgb(68, 203, 134);
   &[data-theme="light"] {
     --white2primary: #fff;
     --white2black: #fff;
+    --white2primarylight:#fff;
     --primary2white: rgb(93, 38, 201);
     --primarylight2light500: rgb(125, 81, 212);
     --primarylight2white: rgb(125, 81, 212);
+    --primarydark2white: rgb(11, 14, 52);
     --black2white: rgb(32, 32, 32);
-    --softblack2white:rgb(50,50,50);
+    --black1002primary:rgb(32,32,32,0.1);
+    --softblack2white: #414a53;
     --primary2black: rgb(93, 38, 201);
     --black2primary: rgb(32, 32, 32);
     --lightgrey2black: #d3d3d3;
@@ -44,25 +48,29 @@
     --dark5002light750: rgb(32, 32, 32, 0.75);
     --dark5002light500: rgb(32, 32, 32, 0.5);
     --dark2502light250: rgb(32, 32, 32, 0.25);
-    --dark1002light100: rgb(32, 32, 32, 0.10);
-    --dark2002light200: rgb(32, 32, 32, 0.20);
-    --light2502dark250:rgb(255,255,255,0.25);
+    --dark1002light100: rgb(32, 32, 32, 0.1);
+    --dark2002light200: rgb(32, 32, 32, 0.2);
+    --dark502light50: rgb(32, 32, 32, 0.05);
+    --light2502dark250: rgb(255, 255, 255, 0.25);
     --dark2502white: rgb(32, 32, 32, 0.25);
     --d2l-gradient: linear-gradient(
       rgba(44, 9, 112, 0.7) 0%,
       rgba(44, 9, 112, 0.12) 57.41%,
       rgba(255, 61, 103, 0.05) 104.26%
-      );
-    }
+    );
+  }
   &[data-theme="dark"] {
     --white2primary: rgb(93, 38, 201);
     --white2black: rgb(32, 32, 32);
+    --white2primarylight: rgb(125, 81, 212);
     --primary2white: #fff;
     --primarylight2light500: rgb(255, 255, 255, 0.5);
     --primarylight2white: rgb(255, 255, 255);
+    --primarydark2white: rgb(255, 255, 255);
     --primary2black: rgb(32, 32, 32);
     --black2white: #fff;
-    --softblack2white:#fff;
+    --black1002primary:rgb(93, 38, 201);
+    --softblack2white: #fff;
     --black2primary: rgb(93, 38, 201);
     --lightgrey2black: rgb(32, 32, 32);
     --light22light750: rgb(255, 255, 255, 0.75);
@@ -73,11 +81,11 @@
     --dark7502light750: rgb(255, 255, 255, 0.75);
     --dark5002light750: rgb(255, 255, 255, 0.75);
     --dark5002light500: rgb(255, 255, 255, 0.5);
-    
     --dark2502light250: rgb(255, 255, 255, 0.25);
-    --dark1002light100: rgb(255, 255, 255, 0.10);
-    --dark2002light200: rgb(255, 255, 255, 0.20);
-    --light2502dark250:rgb(32,32,32,0.25);
+    --dark1002light100: rgb(255, 255, 255, 0.1);
+    --dark2002light200: rgb(255, 255, 255, 0.2);
+    --dark502light50: rgb(255, 255, 255, 0.05);
+    --light2502dark250: rgb(32, 32, 32, 0.25);
     --dark2502white: #fff;
     --d2l-gradient: linear-gradient(
       rgb(93, 38, 201),
@@ -212,7 +220,10 @@ h4 {
   height: 80px;
 }
 .max-w-520 {
-  max-width: 520px;
+  max-width: 520px !important;
+}
+.max-w-1068 {
+  max-width: 1068px !important;
 }
 .red-alert {
   background: rgb(255, 233, 238);
@@ -236,3 +247,26 @@ h4 {
     }
   }
 }
+.headingCopy {
+  position: relative;
+  svg {
+    opacity: 0;
+    position: absolute;
+    transform: translate(-70%, 35%);
+
+    z-index: 1000;
+    transition: all 0.2s linear;
+  }
+  &:hover {
+    svg {
+      transform: translate(0, 35%);
+      opacity: 1;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    svg {
+      display: none;
+    }
+  }
+}
+

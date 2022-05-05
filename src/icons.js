@@ -7,7 +7,7 @@ import {
   RiHeartPulseFill,
 } from "react-icons/ri";
 
-import { AiOutlineCar, AiOutlineArrowRight} from "react-icons/ai";
+import { AiOutlineCar, AiOutlineArrowRight,AiOutlineLink} from "react-icons/ai";
 import { MdOutlineArticle,MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { BiBookContent } from "react-icons/bi";
 import { FaCarSide } from "react-icons/fa";
@@ -21,6 +21,7 @@ export {
   RiHealthBookLine,
   AiOutlineCar,
   AiOutlineArrowRight,
+  AiOutlineLink,
   MdOutlineArticle,
   MdOutlineKeyboardArrowRight,
   BiBookContent,

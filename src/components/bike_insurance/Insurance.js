@@ -10,10 +10,14 @@ const Insurance = ({ pageFor }) => {
   };
   return (
     <>
-      <InsBreadCrumb type={pageFor} />
-      <InsHeading type={pageFor} />
-      <InsTab type={pageFor} activeTab={activeTab} changeTab={changeTab} />
-      <TabContent activeTab={activeTab} pageFor={pageFor}/>
+      <div className="container-lg">
+        <InsBreadCrumb type={pageFor} />
+        <InsHeading type={pageFor} />
+      </div>
+      <div>
+        <InsTab type={pageFor} activeTab={activeTab} changeTab={changeTab} />
+        <TabContent activeTab={activeTab} pageFor={pageFor} />
+      </div>
     </>
   );
 };

@@ -4,7 +4,7 @@ import InsHeading from "../common_insurance/InsHeading";
 import InsTab from "../common_insurance/InsTab";
 import TabContent from "./TabContent";
 const Insurance = ({ pageFor }) => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(1);
   const changeTab = (num) => {
     setActiveTab(num);
   };
@@ -13,9 +13,9 @@ const Insurance = ({ pageFor }) => {
       <div className="container-lg">
         <InsBreadCrumb type={pageFor} />
         <InsHeading type={pageFor} />
-        <InsTab type={pageFor} activeTab={activeTab} changeTab={changeTab} />
       </div>
-      <div className="container-fluid">
+      <div>
+        <InsTab type={pageFor} activeTab={activeTab} changeTab={changeTab} />
         <TabContent activeTab={activeTab} pageFor={pageFor} />
       </div>
     </>

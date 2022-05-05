@@ -47,7 +47,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/support/home"
-            className="btn-help text-white text-capitalize"
+            className="btn-help  text-capitalize"
           >
             help
           </Link>

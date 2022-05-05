@@ -25,9 +25,7 @@ const BikeInsurance = () => {
         </div>
       </div>
       <div className="Insurance-Section">
-        <div className="container-lg">
-          <Insurance pageFor="bike" />
-        </div>
+        <Insurance pageFor="bike" />
       </div>
     </>
   );

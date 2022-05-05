@@ -26,6 +26,9 @@ nav {
     .nav-left {
       display: grid;
       grid-gap: 2rem;
+      .btn-help{
+        color: inherit;
+      }
       .menu-icon {
         font-size: 2.4rem;
         color: var(--white);

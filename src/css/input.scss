@@ -228,8 +228,6 @@
     border: 1px solid var(--primarylight2light500);
     padding: 1rem;
     border-radius: 0.5rem;
-    @media screen and (max-width: 768px) {
-    }
     .inner {
       display: flex;
       .icon {
