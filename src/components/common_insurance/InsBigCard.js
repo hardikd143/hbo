@@ -3,7 +3,8 @@ import HeadingCopy from "../HeadingCopy";
 const InsBigCard = ({ data, heading }) => {
   const getHeading = (title) => {
     if (heading) {
-      return <HeadingCopy text={title} />;
+    //   return <HeadingCopy text={title} />;
+      return <h3>{title}</h3> ;
     }
   };
   return (

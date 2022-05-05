@@ -323,3 +323,53 @@
     }
   }
 }
+
+.InsListStyledCard-Wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  @media screen and (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
+  .InsListStyledCard {
+    padding: 1rem;
+    background: var(--white2primary);
+    border-radius: 0.5rem;
+    max-width: 550px;
+    @media screen and (max-width: 650px) {
+      padding: 0.5rem;
+      max-width: 450px;
+      margin: auto;
+    }
+    .header {
+      display: flex;
+      height: 40px;
+      .svg {
+        min-width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+      }
+      h3 {
+        line-height: 40px;
+        margin-left: 5px;
+        flex-grow: 1;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--primarydark2white);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+    p {
+      padding-left: 45px;
+
+      color: var(--dark5002light500);
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+}

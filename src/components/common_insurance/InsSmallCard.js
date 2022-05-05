@@ -8,7 +8,8 @@ const InsSmallCard = ({ data }) => {
         return (
           <div key={index} className="InsSmallCard">
             <img src={img} alt="img" />
-            <HeadingCopy text={title}  />
+            {/* <HeadingCopy text={title}  /> */}
+            <h3>{title}</h3>
             <p>{content}</p>
           </div>
         );
