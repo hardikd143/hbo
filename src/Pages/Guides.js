@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Guides = () => {
-  return (
-    <div>Guides</div>
-  )
-}
+  return <h3 className="InDev">In Developement</h3>;
+};
 
-export default Guides
+export default Guides;

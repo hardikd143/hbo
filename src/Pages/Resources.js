@@ -2,7 +2,8 @@ import React from 'react'
 
 const Resources = () => {
   return (
-    <div>Resources</div>
+    <h3 className='InDev'>In Developement</h3>
+
   )
 }
 

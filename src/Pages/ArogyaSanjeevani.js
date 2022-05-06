@@ -2,7 +2,7 @@ import React from 'react'
 
 const ArogyaSanjeevani = () => {
   return (
-    <div>Arogya Sanjeevani</div>
+    <h3 className='InDev'>In Developement</h3>
   )
 }
 

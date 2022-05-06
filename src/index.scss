@@ -28,13 +28,13 @@
   &[data-theme="light"] {
     --white2primary: #fff;
     --white2black: #fff;
-    --white2primarylight:#fff;
+    --white2primarylight: #fff;
     --primary2white: rgb(93, 38, 201);
     --primarylight2light500: rgb(125, 81, 212);
     --primarylight2white: rgb(125, 81, 212);
     --primarydark2white: rgb(11, 14, 52);
     --black2white: rgb(32, 32, 32);
-    --black1002primary:rgb(32,32,32,0.1);
+    --black1002primary: rgb(32, 32, 32, 0.1);
     --softblack2white: #414a53;
     --primary2black: rgb(93, 38, 201);
     --black2primary: rgb(32, 32, 32);
@@ -72,12 +72,12 @@
     --primarydark2white: rgb(255, 255, 255);
     --primary2black: rgb(32, 32, 32);
     --black2white: #fff;
-    --black1002primary:rgb(93, 38, 201);
+    --black1002primary: rgb(93, 38, 201);
     --softblack2white: #fff;
     --black2primary: rgb(93, 38, 201);
     --lightgrey2black: rgb(32, 32, 32);
     --light22light750: rgb(255, 255, 255, 0.75);
-    --light22dark500: rgb(32,32,32,5);
+    --light22dark500: rgb(32, 32, 32, 5);
     --light22primary: rgb(93, 38, 201);
     --lightgrey2primary: rgb(93, 38, 201);
     --secondary2black: rgb(32, 32, 32);
@@ -275,3 +275,31 @@ h4 {
   }
 }
 
+.InDev {
+  text-align: center;
+  color: var(--white);
+  margin: 3rem auto;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid var(--white);
+    left: 0;
+    transform: scale(0.5, 1);
+    bottom: -8px;
+    animation: inDev forwards 2s infinite;
+    @keyframes inDev {
+      0%{
+        transform: scale(0.2, 1);
+      }
+      50%{
+        transform: scale(0.5, 1);
+      }
+      100%{
+        transform: scale(0.2, 1);
+      }
+    }
+  }
+}
