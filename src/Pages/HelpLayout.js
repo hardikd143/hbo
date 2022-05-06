@@ -6,7 +6,7 @@ import "../css/themeButton.scss";
 import "../css/help.scss";
 const HelpLayout = () => {
   return (
-    <div className="main">
+    <>
       <header className="header common ">
         <div className="container-lg header-inner">
           <Logo type="logo-purple" />
@@ -18,7 +18,7 @@ const HelpLayout = () => {
           <Outlet />
         </section>
       </div>
-    </div>
+    </>
   );
 };
 

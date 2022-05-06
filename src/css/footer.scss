@@ -1,0 +1,30 @@
+footer.footer {
+
+    .footer-secondary{
+        background: var(--light22primary);
+        padding: 1rem;
+        .inner{
+            max-width: 1170px !important;
+            margin: auto;
+            .footer-info{
+                display: flex;
+                span{
+                    margin-right: 2rem;
+                    color: var(--dark7502light750);
+                    font-size: 0.625rem;
+                    font-weight: 500;
+                }
+            }
+            .footer-content{
+                padding-top: 0.5rem;
+                p{
+                    // color: var(--light22dark500);
+                    color: var(--dark7502light750);
+                    font-size: 0.625rem;
+                    margin: 0;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

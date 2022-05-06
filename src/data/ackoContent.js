@@ -9,6 +9,17 @@ import personExp from "../img/person-experience.png";
 import discountLabel from "../img/discount-label.png";
 import fastTimer from "../img/fast-timer.png";
 import tapSolution from "../img/tap-solution.png";
+import policies from "../img/compare-policies.png";
+import support247 from "../img/support-247.svg";
+import zeroPaper from "../img/zero-paper.png";
+import saveTime from "../img/save-time.png";
+import claimImg1 from "../img/claim-img-1.png";
+import claimImg2 from "../img/claim-img-2.png";
+import claimImg3 from "../img/claim-img-3.png";
+import chartImg1 from "../img/chart-img1.jpeg";
+import chartImg2 from "../img/chart-img2.jpeg";
+import chartImg3 from "../img/chart-img3.jpeg";
+import chartImg4 from "../img/chart-img4.jpeg";
 const ackoContent = [
   {
     page: "car",
@@ -403,21 +414,21 @@ const buyCarIns = {
     },
   ],
 };
-const buyBikeIns={
-  title:`Buy/renew bike/two wheeler insurance online in India`,
-  list:[
+const buyBikeIns = {
+  title: `Buy/renew bike/two wheeler insurance online in India`,
+  list: [
     {
-      id:`bBI1`,
-      title:`What is bike insurance/two-wheeler insurance policy?`,
-      content:`Bike insurance or a two wheeler insurance policy is a contract between the bike owner and the insurance provider. Here the insurance company provides financial coverage for damage/loss to the bike owner in exchange for a premium.`,
+      id: `bBI1`,
+      title: `What is bike insurance/two-wheeler insurance policy?`,
+      content: `Bike insurance or a two wheeler insurance policy is a contract between the bike owner and the insurance provider. Here the insurance company provides financial coverage for damage/loss to the bike owner in exchange for a premium.`,
     },
     {
-      id:`bBI2`,
-      title:`How to buy a bike insurance policy?`,
-      content:`You can buy your bike/two wheeler insurance policy through both online and offline methods. With the online method, you can buy, renew the policy or raise a claim in a few clicks from anywhere and at anytime.`,
-    }
-  ]
-}
+      id: `bBI2`,
+      title: `How to buy a bike insurance policy?`,
+      content: `You can buy your bike/two wheeler insurance policy through both online and offline methods. With the online method, you can buy, renew the policy or raise a claim in a few clicks from anywhere and at anytime.`,
+    },
+  ],
+};
 const reponsibleFactor = {
   title: "Factors responsible for determining the car insurance premium",
   desc: "The premium that you pay is determined by a host of factors as mentioned below.",
@@ -557,6 +568,382 @@ const addOneCarIns = {
     },
   ],
 };
+const growthCarInsIndia = {
+  title: `Crystal ball gazing into the growth of the motor insurance industry`,
+  desc: `The industry is all set to grow as digital adoption and personalised offerings become the North Star of the auto insurance industry.`,
+  list: [
+    {
+      id: "gCII1",
+      title: `Internet penetration `,
+      content: `As per the data from Statista, internet users in India rose from 422 mn in 2017 to 761 mn by 2021, which is a compounded annual growth rate of 15.9%. This number is projected to reach approx. 974 mn by 2025. The internet penetration and a young demographic dividend will influence the growth of digital auto insurance products in India.`,
+    },
+    {
+      id: "gCII2",
+      title: `Foreign Direct Investment (FDI) inflows`,
+      content: `FDI inflows stood at Rs. 26,000 crore (US$3.58 bn) since 2015. Asset under management (AUM) in the insurance sector increased by 76% over the last five years. The recent increase in FDI inflow from 49% to 74% in the insurance sector will likely propel new innovative offerings and strengthen the insurance penetration in India.`,
+    },
+    {
+      id: "gCII3",
+      title: `Growth in the automotive industry`,
+      content: `Strong growth in the automotive industry and the spike in auto sales will propel the growth of auto insurance in India over the next decade. Between FY14-15 and FY18-19, the automobile domestic sales registered an average growth of 5.8% y-o-y.`,
+    },
+    {
+      id: "gCII4",
+      title: `Demographic dividend`,
+      content: `With approx. 400 mn millennials and their soaring aspirations, the opportunities are humongous for auto insurance companies to acquire new customers.`,
+    },
+    {
+      id: "gCII5",
+      title: `Financial ecosystem`,
+      content: `India’s strong macro-economic factors and a robust financial ecosystem make India an attractive hubspot for motor insurance products.`,
+    },
+  ],
+};
+const glimpseInsIndustry = {
+  title: `A glimpse into the auto insurance industry in India`,
+  list: [
+    {
+      id: `gII1`,
+      title: `Growth in Gross Direct Premium (GDP)`,
+      content: `The Indian auto insurance business registered a growth of close to 8.9% in FY18-19 and close to 7.2% in FY19-20. In FY18-19, the share of the auto insurance business in terms of Gross Direct Premium was 38% of India’s total general insurance business.`,
+    },
+    {
+      id: `gII2`,
+      title: `States contributing maximum growth`,
+      content: `As per the report by IIB, this growth comes from 6 states i.e Maharashtra, Uttar Pradesh, Karnataka, Tamil Nadu, Gujarat and Delhi, which contributed close to 50% of the total policies and claims.`,
+    },
+    {
+      id: `gII3`,
+      title: `Contribution to non-life insurance premium`,
+      content: `Gross Direct Premium increased from Rs. 59,246 crores in FY17-18 to Rs. 69,208 crores in FY19-20. For FY20-21, the market share of the motor insurance premium stands at approx. 34% of the overall non-life insurance premium.`,
+    },
+  ],
+};
+const whereShouldBuy = {
+  title: "Online vs offline: Where should you buy?",
+  desc: "While the offline or traditional method continues to exist, the online mode offers a faster, quicker, and efficient process when it comes to buying and renewing policies or while raising a claim. Here are the benefits of buying two-wheeler insurance online.",
+  list: [
+    {
+      id: "wSB1",
+      img: policies,
+      title: `Compare policies`,
+      content: `The online insurance platform offers you the option of selecting a suitable policy. You can compare various policies and get to know the merits and demerits of the plan.`,
+    },
+    {
+      id: "wSB2",
+      img: discountLabel,
+      title: `Lower premium`,
+      content: `The online method does not involve any agents. Hence, the benefit of low-costs is passed on to the customer in the form of lower premiums compared to offline policies.`,
+    },
+    {
+      id: "wSB3",
+      img: support247,
+      title: `Expert assistance`,
+      content: `Avail support from insurance experts who can help you throughout the process of buying and renewing policies or while registering a claim.`,
+    },
+    {
+      id: "wSB4",
+      img: zeroPaper,
+      title: `Zero paperwork`,
+      content: `Skip the tedious paperwork! Share a few details, select the policy, pay premium and receive the policy in your inbox instantly.`,
+    },
+    {
+      id: "wSB5",
+      img: saveTime,
+      title: `Saves time`,
+      content: `With online two wheeler insurance, you can transact online anywhere and anytime, which helps you save time and efforts.`,
+    },
+
+    {
+      id: "wSB5",
+      img: tapSolution,
+      title: `One-stop solution`,
+      content: `With online 2 wheeler insurance, you can not just buy bike insurance in a jiffy, but also manage and raise claims anytime and anywhere.`,
+    },
+  ],
+};
+const bikeInsTerminologies = {
+  title: `Important terminologies related to two-wheeler insurance`,
+  desc: `With various jargons and terminologies, insurance is made complicated. However, it is super-easy if you understand their relevance. Here are a few of the terminologies that you may want to know.`,
+  list: [
+    {
+      id: `bIt1`,
+      title: `Insured Declared Value (IDV)`,
+      content: `Insured Declared Value (IDV) is the sum insured amount or the current market value of the bike. This is the amount ACKO will pay in case of a total loss due to theft, fire, riots, floods, etc. Hence, it is important to choose the right value so that you get the rightful compensation in case of a total loss. The buyer can choose the IDV while buying or renewing the policy. For two-wheelers, which are more than 5 years old, the insurer and policyholder will mutually agree on the IDV.`,
+    },
+    {
+      id: `bIt2`,
+      title: `IDV Formula
+      `,
+      content: `IDV is calculated as the selling price of the manufacturer minus the depreciation value. The lower the IDV, the lower the premium and vice versa.
+
+      Example: Your bike’s market value is Rs. 75,000. You decide to reduce the IDV to Rs. 65,000 to decrease the premium. In case of theft, the insurer will pay the IDV after deducting depreciation, which is lower than the market value. Hence, you need to be careful while changing the IDV.`,
+    },
+    {
+      id: `bIt3`,
+      title: `Zero Depreciation`,
+      content: `With time, the value of the bike depreciates due to wear and tear. While making a claim, the insurance company only pays this depreciated value and not the entire value. 
+
+      With Zero Depreciation add-on cover, age does not matter since depreciation is not considered and you enjoy a higher claim settlement amount. Also, the insurer will not consider the deprecation of the replaced bike parts. Hence, you can get almost the same value of coverage by the insurer in case you have to replace a part of the bike.`,
+    },
+    {
+      id: `bIt4`,
+      title: `Consumables Cover`,
+      content: `Parts such as screw, nut and bolt, lubricant, engine and gearbox oil, distilled water, A/C gas, oil, and break filter are called Consumable items. 
+
+      The basic Comprehensive Insurance policy does not cover consumable items while settling claims. The Consumables add-on cover will pay for the specified consumable items to help you save on cost.`,
+    },
+    {
+      id: `bIt5`,
+      title: `Voluntary Deductible`,
+      content: `Deductible is the part of the repair bill that you need to pay from your pocket. There are two types - Compulsory and Voluntary. Compulsory Deductible for two-wheelers is fixed at Rs. 100 by the Insurance Regulatory and Development Authority of India (IRDAI). 
+
+      In case of Voluntary Deductible, you have the option to increase the percentage of the deductible. In return, the insurer offers a discount on the premium amount resulting in lower premiums. This is suitable when you are not sure of making claims during the policy period.
+      
+      Example: If your bike was damaged and the total claim amount is Rs. 6,000 and you have opted for a Voluntary Deductible of Rs. 2,000, then you have to pay Rs. 2,000 and the insurer will pay the balance amount of Rs. 4,000.`,
+    },
+    {
+      id: `bIt6`,
+      title: `No Claim Bonus`,
+      content: `ACKO rewards riders with a discount for driving safely and not raising a claim during the policy period. The discount is referred to as No Claim Bonus (NCB) and can be used while renewing the policy.
+
+      On the first two-wheeler insurance renewal, you will receive a 20% discount and it increases for five consecutive years for driving safely and not raising any claims. This discount can go up to 50%.
+      
+      Example: if you got a 20% discount on the first renewal of the policy and you do not file a claim the second year, the discount for the second renewal rises to 25%. Similarly, for the third, fourth and fifth consecutive no-claim years, the NCB discount becomes 35%, 45% and 50% respectively.`,
+    },
+  ],
+};
+const benefitsRenewBikeIns = {
+  title: `Benefits of renewing bike insurance policy at ACKO`,
+  desc: `Below are the primary benefits of renewing a two wheeler insurance online with ACKO.`,
+  list: [
+    {
+      id: `bRBI1`,
+      content: `Include useful add-on covers* that meet your requirement. *(Only if available)`,
+    },
+    {
+      id: `bRBI2`,
+      content: `Calculate the cost of your bike insurance online and play around with various factors such as IDV.`,
+    },
+    {
+      id: `bRBI3`,
+      content: `Raise claims by login into your account or via mobile app anytime and anywhere.`,
+    },
+    {
+      id: `bRBI4`,
+      content: `Pay easily through various payment options and save on time and efforts.`,
+    },
+    {
+      id: `bRBI5`,
+      content: `Instant two wheeler insurance renewal online process - completely digital, paperless and hassle-free.`,
+    },
+    {
+      id: `bRBI6`,
+      content: `Receive the policy document instantly to your registered email account.`,
+    },
+  ],
+};
+const carInsBenefits = {
+  title: `Car insurance benefits in India`,
+  desc: `Here are the important benefits of car insurance in India.`,
+  list: [
+    {
+      id: `cIB1`,
+      title: `Personal accident cover`,
+      content: `One of the most valuable benefits of car insurance is that it offers Personal Accident (PA) cover. The PA cover provides a financial shield against permanent total disability and death caused by accident. The cover is mandatory as per law when you buy car insurance.`,
+    },
+    {
+      id: `cIB2`,
+      title: `Cover against car damage`,
+      content: `To see your loved possessions damaged can sink your heart. Car insurance is an excellent option to mitigate these financial liabilities. If your car is damaged due to an accident, fire or natural/manmade calamities, car insurance will provide financial protection.`,
+    },
+    {
+      id: `cIB3`,
+      title: `Wide network of garages`,
+      content: `ACKO has partnered with an extensive network of garages across the cities it operates. With access to network garages, you get to enjoy the cashless services across these locations.`,
+    },
+    {
+      id: `cIB4`,
+      title: `Third-party liability coverage`,
+      content: `Damages to a third party’s property or vehicle or even injuries or the demise of the third person can cause substantial financial loss. The mandatory Third-party Car Insurance Plan offers financial protection against third-party liabilities due to an accident caused by the insured car.`,
+    },
+    {
+      id: `cIB5`,
+      title: `No Claim Bonus (NCB) advantage`,
+      content: `For not filing claims during the policy period, the insurer offers a discount on the renewal premium. This discount is known as NCB. You can get a discount of up to 50% if you do not file claims for five consecutive years, making car insurance affordable.`,
+    },
+    {
+      id: `cIB6`,
+      title: `Coverage against vehicle theft`,
+      content: `Another benefit of car insurance is that it provides financial protection against vehicle theft. If your car is stolen, ACKO shall pay the Insured Declared Value (IDV) stated in your policy, subject to terms and conditions.`,
+    },
+    {
+      id: `cIB7`,
+      title: `Discounts`,
+      content: `ACKO offers discounts on the car insurance premium during special occasions and festivals. You can take advantage of the discount to buy an affordable car insurance policy for your vehicle.`,
+    },
+    {
+      id: `cIB8`,
+      title: `Save time and hassles`,
+      content: `The cost and time taken to repair the damages may cause a lot of inconveniences. With an active car insurance plan, you rest assured that you are financially protected at all times. You also have the advantage of online car insurance, wherein you can buy or renew or raise claims within a few minutes.`,
+    },
+    {
+      id: `cIB9`,
+      title: `Death benefits to dependents`,
+      content: `In case of the insured's demise due to an accident, dependents get a lumpsum compensation through the PA cover. The coverage limit is up to Rs. 15 lakhs as defined by the IRDAI.`,
+    },
+    {
+      id: `cIB10`,
+      title: `Pick and drop services`,
+      content: `We offer pickup and drop services at selected locations. As per this service, your damaged vehicle is repaired at our network garage and we deliver it back to you in 3 working days.`,
+    },
+  ],
+};
+const carInsAdvantages = {
+  title: `Advantages of Comprehensive Car Insurance`,
+  desc: `Car owners might be aware of the fact that they need to purchase car insurance along with their car. However, they might not always be aware of the following points:`,
+  descList: [
+    {
+      id: `dL1`,
+      content: `➢     Car insurance is mandatory as per The Motor Vehicles Act, 1988`,
+    },
+    {
+      id: `dL2`,
+      content: `➢     It needs to be renewed before expiry to keep it active`,
+    },
+    {
+      id: `dL3`,
+      content: `➢     There are two types of policies: Third-party Liability and Comprehensive`,
+    },
+    {
+      id: `dL4`,
+      content: `➢     You have the option of purchasing a car insurance plan of your choice; there is no compulsion of sticking to what the car dealer suggests`,
+    },
+    {
+      id: `dL5`,
+      content: `➢     Buying car insurance online is easy and convenient`,
+    },
+  ],
+  list: [
+    {
+      id: `cIA1`,
+      title: `Third-party Liability Cover`,
+      content: `A Comprehensive insurance plan includes the mandatory aspect associated with a car insurance policy. It covers injury to third party or damage to third party’s property caused due to the insured car.`,
+    },
+    {
+      id: `cIA2`,
+      title: `Personal Accident Cover`,
+      content: `Recently, this component of a car insurance policy was revised and the cover was increased from Rs. 2 lakhs to Rs. 15 lakhs. What this means, in case you are injured due to an accident involving your insured car, the insurance company will take care of medical expenses up to Rs. 15 lakhs as per the terms and conditions of the policy.`,
+    },
+    {
+      id: `cIA3`,
+      title: `Car Accident`,
+      content: `A car accident has the potential to be devastating; mentally, physically, and financially. Unlike a Third-party Liability policy, a Comprehensive plan covers damages to your car as well. Thus, if your car is damaged due to an accident, the insurance company will take care of the expenses incurred for repairing the insured vehicle.`,
+    },
+    {
+      id: `cIA4`,
+      title: `Damages Due to Fire`,
+      content: `A Comprehensive plan covers damages to your car caused due to fire. Fire due to self-ignition, explosion, lightning etc. are usually covered under this plan.`,
+    },
+    {
+      id: `cIA5`,
+      title: `Car Theft`,
+      content: `Imagine you park your car in a mall’s parking lot and fail to find it while exiting the mall! It would be devastating, wouldn’t it? A Comprehensive plan covers car theft. You shall receive the vehicle’s Insured Declared Value (IDV) in case of car theft, after the claim settlement process.`,
+    },
+    {
+      id: `cIA6`,
+      title: `Calamities`,
+      content: `Nowadays, cities are vulnerable to flooding a lot more than they used to in the past. Be it natural calamities such as floods or manmade calamities such as riots, damages to your car will be covered if you purchase a Comprehensive policy.`,
+    },
+    {
+      id: `cIA7`,
+      title: `Add-ons`,
+      content: `You also have the option of purchasing additional covers along with your Comprehensive plan. Note that these covers cannot be purchased on a stand-alone basis or along with a Third-party Liability policy. Add-ons are designed to cover the exceptions of a policy and to lend a bit of personalization to your car insurance cover. Here’s a list of popular car insurance Add-ons:`,
+    },
+  ],
+};
+const easyClaim = {
+  title: `Claims are easy with ACKO`,
+  desc: `Skip cumbersome paperwork, raise your claim online, and experience a hassle-free journey with ACKO. Our 24x7 claim registrations do not require you to submit physical documents. Visit our website www.acko.com or mobile app and select “claim now” to raise your claim with a few clicks. Below are the features of ACKO’s two-wheeler insurance claim process.`,
+  list: [
+    {
+      id: `eC1`,
+      img: claimImg1,
+      title: `Same day claim settlement`,
+      content: `You do not have to wait for days for the claim to be settled, especially for minor damages. ACKO will settle the claim on the same day.`,
+    },
+    {
+      id: `eC2`,
+      img: claimImg2,
+      title: `Advance cash settlement`,
+      content: `In case of minor damages to your bike, ACKO will settle the claim instantly. You can choose a garage of your choice to fix the damage.`,
+    },
+    {
+      id: `eC3`,
+      img: claimImg3,
+      title: `Instant settlement`,
+      content: `Login and upload the picture of the bike damages, and get an instant settlement. This process usually takes less than 2 hours.`,
+    },
+  ],
+};
+const needHelp = {
+  title: `Need more help?`,
+  desc: `Have queries related to ACKO’s car insurance policies? Refer to Policy Wordings here: https://www.acko.com/download/ for detailed information or reach out to us via email or phone using the information below.`,
+  list: [
+    {
+      id: `nH1`,
+      title: `Email`,
+      content: `Write to us at hello@acko.com`,
+    },
+    {
+      id: `nH2`,
+      title: `Phone`,
+      content: `Call us on 1800 266 2256`,
+    },
+  ],
+};
+const need4CarIns = {
+  title: `The need for car insurance in India`,
+  desc: `As per the report by Insurance Information Bureau (IIB), approximately 23 crore vehicles were running on the Indian roads as of 31st March 2019. While India ranked fourth across the globe with respect to the vehicles manufactured in 2019, the bike and car insurance penetration showed signs of worry. Out of 23 crore vehicles in the country, 57% were uninsured. If we do a quick calculation, approx. 13 crore Indian vehicles did not even have a mandatory Third-party insurance policy. Here are a few more reasons why insurance for cars/bikes is necessary in our country.`,
+  list: [
+    {
+      id: `n4CI1`,
+      img: chartImg1,
+      title: `Increase in car and bike thefts`,
+      content: `In 2019, close to 2.4 lakh car and bike thefts were reported in the country as per the report released by National Crime Records Bureau (NCRB).
+
+      This is a Compound Annual Growth Rate (CAGR) of close to 2% over the last 3 years. This means 105 vehicles were stolen out of every 1 lakh vehicle in India, with only 25% getting recovered later.
+      
+      Hence, it is increasingly important to insure your car with Comprehensive Car Insurance to avoid financial loss in case of theft. If we further dissect this data statewise, 11 states contributed to 70% of vehicle thefts in India.`,
+    },
+    {
+      id: `n4CI2`,
+      img: chartImg2,
+      title: `Rising number of road accidents`,
+      content: `In 2019, our country reported close to 4.4 lakh road accidents as per the NCRB report. That is a perturbing number of approx. 191 road accidents per 1 lakh vehicles in India. In these accidents, around 1.54 lakh people died and close ~4.4 lakh people reported injuries.
+
+      As per the chart, there has been a steady decrease in road accidents since 2015. However, that’s not enough recovery, as India ranked third in the world when it came to the number of road accidents in 2018.`,
+    },
+  ],
+};
+const underPenetrationIns = {
+  title: `The need for car insurance in India`,
+  desc: `As per the report by Insurance Information Bureau (IIB), approximately 23 crore vehicles were running on the Indian roads as of 31st March 2019. While India ranked fourth across the globe with respect to the vehicles manufactured in 2019, the bike and car insurance penetration showed signs of worry. Out of 23 crore vehicles in the country, 57% were uninsured. If we do a quick calculation, approx. 13 crore Indian vehicles did not even have a mandatory Third-party insurance policy. Here are a few more reasons why insurance for cars/bikes is necessary in our country.`,
+  list: [
+    {
+      id: `uPI1`,
+      img: chartImg3,
+      title: `Total vehicle uninsured population`,
+      content: `For FY18-19, the total number of vehicles on the Indian roads was approx. 23 crores. Only 43% were insured. While 66% of two-wheelers remained uninsured (up from 62% in FY16-17), the private car uninsured proportion stood at 11% (up from 7% in FY16-17).`,
+    },
+    {
+      id: `uPI2`,
+      img: chartImg4,
+      title: `Uninsured proportion in Indian states`,
+      content: `There were 21 states/union territories where the uninsured rate was more than 50%. Meghalaya topped the list with 86% uninsured vehicles, whereas Kerala performed comparatively better with just 17% uninsured cars and bikes in the state. 11 major states registered an uninsured proportion of more than 50%.`,
+    },
+  ],
+};
 export {
   ackoContent,
   notCovered,
@@ -566,4 +953,15 @@ export {
   reponsibleFactor,
   claimProcess,
   addOneCarIns,
+  growthCarInsIndia,
+  glimpseInsIndustry,
+  whereShouldBuy,
+  bikeInsTerminologies,
+  benefitsRenewBikeIns,
+  carInsBenefits,
+  carInsAdvantages,
+  easyClaim,
+  needHelp,
+  need4CarIns,
+  underPenetrationIns,
 };

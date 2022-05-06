@@ -4,7 +4,6 @@ import insuranceTabData from "../../data/insuranceTabData";
 
 const InsTab = ({ type, activeTab, changeTab }) => {
   let pageContent = insuranceTabData.find((item) => item.page === type);
-  //   console.log(mainContent);
   const { tabs } = pageContent;
   return (
     <div className="InsTab">

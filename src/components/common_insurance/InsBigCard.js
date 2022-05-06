@@ -1,19 +1,13 @@
 import React from "react";
-import HeadingCopy from "../HeadingCopy";
-const InsBigCard = ({ data, heading }) => {
-  const getHeading = (title) => {
-    if (heading) {
-    //   return <HeadingCopy text={title} />;
-      return <h3>{title}</h3> ;
-    }
-  };
+const InsBigCard = ({ data, heading, col,img }) => {
   return (
-    <div className="InsBigCard-wrapper">
+    <div className={`InsBigCard-wrapper ${col?'col3':''} `}>
       {data.map((item, index) => {
         const { content } = item;
         return (
           <div key={index} className="InsBigCard">
-            {getHeading(item.title)}
+            {img && <img src={item.img} alt="img" className="w-100 mb-2"/>}
+            {heading && <h3>{item.title}</h3>}
             <p>{content}</p>
           </div>
         );

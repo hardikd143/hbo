@@ -9,7 +9,7 @@ const Insurance = ({ pageFor }) => {
   };
   return (
     <>
-      <div className="container-lg">
+      <div className="container-lg ">
         <InsBreadCrumb type={pageFor} />
         <InsHeading type={pageFor} />
       </div>

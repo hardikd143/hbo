@@ -1,6 +1,7 @@
 import React from "react";
 import AckoInsurance from "./AckoInsurance";
 import BuyingGuide from "./BuyingGuide";
+import CarInsIndia from './CarInsIndia';
 
 const TabContent = ({ activeTab, pageFor }) => {
   if (activeTab === 0) {
@@ -10,7 +11,7 @@ const TabContent = ({ activeTab, pageFor }) => {
     return <BuyingGuide currentPage={pageFor} />;
   }
   if (activeTab === 2) {
-    return <div>Car Insurance in India</div>;
+    return <CarInsIndia/>;
   }
 };
 

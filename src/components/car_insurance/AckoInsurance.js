@@ -1,8 +1,9 @@
 import React from "react";
-import { ackoContent, notCovered } from "../../data/ackoContent";
+import { ackoContent, notCovered,addOneCarIns } from "../../data/ackoContent";
 import HeadingCopy from "../HeadingCopy";
 import InsSmallCard from "../common_insurance/InsSmallCard";
 import InsBigCard from "../common_insurance/InsBigCard";
+import InsListStyledCard  from "../common_insurance/InsListStyledCard";
 const AckoInsurance = () => {
   const pageName = "car";
   let mainContent = ackoContent.find((item) => item.page === pageName);
@@ -54,6 +55,13 @@ const AckoInsurance = () => {
                 })}
               </tbody>
             </table>
+          </div>
+        </div>
+        <div className="addOneCarIns py-5">
+          <div className="container-lg">
+            <HeadingCopy text={addOneCarIns.title} classes="header" />
+            <p className="subTitle">{addOneCarIns.desc}</p>
+            <InsListStyledCard data={addOneCarIns.list} />
           </div>
         </div>
         <div className="container-fluid">

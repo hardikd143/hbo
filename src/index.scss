@@ -4,6 +4,7 @@
   --white750: rgb(255, 255, 255, 0.75);
   --white500: rgb(255, 255, 255, 0.5);
   --white250: rgb(255, 255, 255, 0.25);
+  --white100: rgb(255, 255, 255, 0.1);
   --black: rgb(32, 32, 32);
   --black100: rgba(32, 32, 32, 0.1);
   --black500: rgba(32, 32, 32, 0.5);
@@ -39,6 +40,8 @@
     --black2primary: rgb(32, 32, 32);
     --lightgrey2black: #d3d3d3;
     --light22light750: #ececec;
+    --light22dark500: #ececec;
+    --light22primary: #ececec;
     --lightgrey2primary: #d3d3d3;
     --secondary2black: rgb(68, 203, 134);
     --secondary2white: rgb(68, 203, 134);
@@ -74,6 +77,8 @@
     --black2primary: rgb(93, 38, 201);
     --lightgrey2black: rgb(32, 32, 32);
     --light22light750: rgb(255, 255, 255, 0.75);
+    --light22dark500: rgb(32,32,32,5);
+    --light22primary: rgb(93, 38, 201);
     --lightgrey2primary: rgb(93, 38, 201);
     --secondary2black: rgb(32, 32, 32);
     --secondary2white: #fff;

@@ -1,6 +1,6 @@
 import React from "react";
 import listStyled from "../../img/list-style-img.svg";
-export const InsListStyledCard = ({ data }) => {
+const InsListStyledCard = ({ data }) => {
   return (
     <div className="InsListStyledCard-Wrapper">
       {data.map((item, index) => {
@@ -19,3 +19,4 @@ export const InsListStyledCard = ({ data }) => {
     </div>
   );
 };
+export default InsListStyledCard;
