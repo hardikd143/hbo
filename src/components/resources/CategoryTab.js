@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const CategoryTab = () => {
   return (
-    <div>CategoryTab</div>
-  )
-}
+    <div className="">
+      <h2 className="color-primary my-3">CategoryTab</h2>
+    </div>
+  );
+};
 
-export default CategoryTab
+export default CategoryTab;

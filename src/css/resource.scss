@@ -102,11 +102,11 @@
         grid-template-columns: 1fr;
       }
       .wrapper {
-        border: 1px solid var(--dark1002light100);
+        border: 1px solid var(--dark5002light750);
         border-radius: 0.625rem;
         overflow: hidden;
         &:hover {
-          border: 1px solid var(--dark2502light250);
+          border: 1px solid var(--dark5002light750);
         }
         .img-wrapper {
           height: 150px;
