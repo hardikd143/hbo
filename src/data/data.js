@@ -6,7 +6,8 @@ import {
   AiOutlineCar,
   MdOutlineArticle,
   BiBookContent,
-} from '../icons'
+  BiBook,
+} from "../icons";
 import React from "react";
 const sublinks = [
   {
@@ -33,9 +34,25 @@ const sublinks = [
   {
     page: "resources",
     links: [
-      { label: "all resources", icon: <BiBookContent />, url: "/resources" },
-      { label: "guides", icon: <RiGuideLine />, url: "/guides" },
-      { label: "articles", icon: <MdOutlineArticle />, url: "/articles" },
+      {
+        label: "all resources",
+        type: `resources`,
+        icon: <BiBookContent />,
+        url: "/resources",
+      },
+      {
+        label: "guides",
+        type: `guides`,
+        icon: <RiGuideLine />,
+        url: "/guides",
+      },
+      {
+        label: "articles",
+        type: `articles`,
+        icon: <MdOutlineArticle />,
+        url: "/articles",
+      },
+      { label: "ebooks", type: `ebooks`, icon: <BiBook />, url: "/ebooks" },
     ],
   },
 ];

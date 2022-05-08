@@ -5,6 +5,7 @@ import { useGlobalContext } from '../context'
 const Submenu = () => {
   const {
     isSubmenuOpen,
+    closeSubmenu,
     page: { page, links },
     location,
   } = useGlobalContext()
@@ -19,6 +20,7 @@ const Submenu = () => {
     <aside
       className={`${isSubmenuOpen ? 'submenu show' : 'submenu'}`}
       ref={container}
+      onMouseLeave={()=>closeSubmenu()}
     >
       <section>
         <div className={`submenu-inner `}>

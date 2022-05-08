@@ -278,6 +278,13 @@ h4 {
 .InDev {
   text-align: center;
   color: var(--white);
+  &.b2w{
+    color: var(--black2white);
+    &::before{
+      border-color: var(--black2white);
+    }
+    
+  }
   margin: 3rem auto;
   position: relative;
   &::before {

@@ -6,22 +6,25 @@ import {
   ArogyaSanjeevani,
   HealthInsurance,
   CarInsurance,
-  Articles,
-  Guides,
   Resources,
+  SingleResource,
+  // Articles,
+  // Guides,
+  // Ebooks,
   Home,
   Login,
   Error,
   HelpIndex,
   SingleHelpArticle,
-  HelpLayout
+  HelpLayout,
 } from "./Pages/index";
 import { useGlobalContext } from "./context";
+
 function App() {
-  const {darkTheme}= useGlobalContext()
-  let htmDoc = document.querySelector('html')
-  let theme = darkTheme?'dark':'light'
-  htmDoc.setAttribute('data-theme',theme)
+  const { darkTheme } = useGlobalContext();
+  let htmDoc = document.querySelector("html");
+  let theme = darkTheme ? "dark" : "light";
+  htmDoc.setAttribute("data-theme", theme);
   return (
     <BrowserRouter>
       <Routes>
@@ -31,14 +34,25 @@ function App() {
           <Route path="health-insurance" element={<HealthInsurance />} />
           <Route path="car-insurance" element={<CarInsurance />} />
           <Route path="arogya-sanjeevani" element={<ArogyaSanjeevani />} />
-          <Route path="articles" element={<Articles />} />
-          <Route path="resources" element={<Resources />} />
-          <Route path="guides" element={<Guides />} />
+
+          <Route path="resources" element={<Resources resourceType="resources" />} />
+          <Route
+            path="articles"
+            element={<SingleResource resourceType="articles" />}
+          />
+          <Route
+            path="guides"
+            element={<SingleResource resourceType="guides" />}
+          />
+          <Route
+            path="ebooks"
+            element={<SingleResource resourceType="ebooks" />}
+          />
         </Route>
-        <Route path="/support/home" element={<HelpLayout/>}>
-          <Route index element={<HelpIndex />}/>
+        <Route path="/support/home" element={<HelpLayout />}>
+          <Route index element={<HelpIndex />} />
           {/* <Route path="article/:id-:name" element={<SingleHelpArticle />}/> */}
-          <Route path="article/:id" element={<SingleHelpArticle />}/>
+          <Route path="article/:id" element={<SingleHelpArticle />} />
         </Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/*" element={<Error />} />
