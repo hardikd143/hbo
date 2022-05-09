@@ -7,11 +7,19 @@ import {
   RiHeartPulseFill,
 } from "react-icons/ri";
 
-import { AiOutlineCar, AiOutlineArrowRight,AiOutlineLink} from "react-icons/ai";
-import { MdOutlineArticle,MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { BiBookContent,BiBook } from "react-icons/bi";
+import {
+  AiOutlineCar,
+  AiOutlineArrowRight,
+  AiOutlineLink,
+} from "react-icons/ai";
+import {
+  MdOutlineArticle,
+  MdOutlineKeyboardArrowRight,
+  MdOutlineKeyboardArrowLeft,
+} from "react-icons/md";
+import { BiBookContent, BiBook } from "react-icons/bi";
 import { FaCarSide } from "react-icons/fa";
-import {BsFillMoonFill,BsFillSunFill} from 'react-icons/bs';
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 export {
   RiMotorbikeLine,
   RiMentalHealthLine,
@@ -24,6 +32,7 @@ export {
   AiOutlineLink,
   MdOutlineArticle,
   MdOutlineKeyboardArrowRight,
+  MdOutlineKeyboardArrowLeft,
   BiBookContent,
   BiBook,
   FaCarSide,

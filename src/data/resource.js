@@ -33,6 +33,28 @@ import e8 from "../img/resource/ebook-8.jpeg";
 import e9 from "../img/resource/ebook-9.jpeg";
 import e10 from "../img/resource/ebook-10.jpeg";
 import e11 from "../img/resource/ebook-11.jpeg";
+const resourceCategories = [
+  {
+    id: `rT1`,
+    category: `All`,
+  },
+  {
+    id: `rT2`,
+    category: `Car Insurance`,
+  },
+  {
+    id: `rT3`,
+    category: `Two Wheeler Insurance`,
+  },
+  {
+    id: `rT4`,
+    category: `Health Insurance`,
+  },
+  {
+    id: `rT5`,
+    category: `Group Health Insurance`,
+  },
+];
 const mainContentData = [
   {
     page: `resources`,
@@ -62,7 +84,7 @@ const mainContentData = [
 const resourceData = [
   {
     id: "g1",
-    category: `Two-wheeler Insurance`,
+    category: `Two Wheeler Insurance`,
     type: "guides",
     img: g1,
     title: `Get started with Two Wheeler Insurance`,
@@ -90,7 +112,7 @@ const resourceData = [
   },
   {
     id: "g5",
-    category: `Two-wheeler Insurance`,
+    category: `Two Wheeler Insurance`,
     type: "guides",
     img: g5,
     title: `Add-ons for Two Wheeler Insurance`,
@@ -118,7 +140,7 @@ const resourceData = [
   },
   {
     id: "g9",
-    category: `Two-wheeler Insurance`,
+    category: `Two Wheeler Insurance`,
     type: "guides",
     img: g9,
     title: `Premium Calculator for Bike Insurance`,
@@ -140,7 +162,7 @@ const resourceData = [
 
   {
     id: "g12",
-    category: `Two-wheeler Insurance`,
+    category: `Two Wheeler Insurance`,
     type: "guides",
     img: g12,
     title: `How to compare Bike Insurance policies`,
@@ -148,16 +170,18 @@ const resourceData = [
 
   {
     id: "a1",
-    category: `Two-wheeler Insurance`,
+    category: `Two Wheeler Insurance`,
     type: "articles",
     img: a1,
-    title: `Essential Tips to Reduce Your Two-wheeler Insurance Premium`,
+    date:`Nov 12,2021`,
+    title: `Essential Tips to Reduce Your Two Wheeler Insurance Premium`,
   },
   {
     id: "a2",
     category: `Car Insurance`,
     type: "articles",
     img: a2,
+    date:`Dec 10,2021`,
     title: `5 Things to Know About Car Insurance for Beginners`,
   },
   {
@@ -165,6 +189,7 @@ const resourceData = [
     category: `Health Insurance`,
     type: "articles",
     img: a3,
+    date:`Apr 12,2021`,
     title: `Room Rent Capping Under Health Insurance Coverage (Room Rent Limit)`,
   },
   {
@@ -172,6 +197,7 @@ const resourceData = [
     category: `Group Health Insurance`,
     type: "articles",
     img: a4,
+    date:`Nov 8,2021`,
     title: `Corporate Health Insurance When Changing Jobs: Things to Consider`,
   },
   {
@@ -179,20 +205,23 @@ const resourceData = [
     category: `Group Health Insurance`,
     type: "articles",
     img: a5,
+    date:`Jul 22,2021`,
     title: `A Quick Guide on Group Insurance for Your Employees`,
   },
   {
     id: "a6",
-    category: `Two-wheeler Insurance`,
+    category: `Two Wheeler Insurance`,
     type: "articles",
     img: a6,
-    title: `Basic Mistakes to Avoid When Renewing Two-wheeler Insurance Online`,
+    date:`Nov 17,2021`,
+    title: `Basic Mistakes to Avoid When Renewing Two Wheeler Insurance Online`,
   },
   {
     id: "a7",
     category: `Health Insurance`,
     type: "articles",
     img: a7,
+    date:`Apr 7,2021`,
     title: `Difference Between Network Hospitals & Non-network Hospitals`,
   },
   {
@@ -200,6 +229,7 @@ const resourceData = [
     category: `Car Insurance`,
     type: "articles",
     img: a8,
+    date:`Apr 27,2022`,
     title: `Car Insurance Online Vs Offline: Which is Better?`,
   },
   {
@@ -207,6 +237,7 @@ const resourceData = [
     category: `Group Health Insurance`,
     type: "articles",
     img: a9,
+    date:`Nov 8,2021`,
     title: `What Is Group Health Insurance Plan And How Does It Work?`,
   },
   {
@@ -214,20 +245,23 @@ const resourceData = [
     category: `Car Insurance`,
     type: "articles",
     img: a10,
+    date:`Nov 15,2021`,
     title: `Cashless Car Insurance Policy - Need of The Hour`,
   },
   {
     id: "a11",
-    category: `Two-wheeler Insurance`,
+    category: `Two Wheeler Insurance`,
     type: "articles",
     img: a11,
-    title: `Myths About Buying Two-wheeler Insurance Online Vs Offline`,
+    date:`Oct 22,2021`,
+    title: `Myths About Buying Two Wheeler Insurance Online Vs Offline`,
   },
   {
     id: "a12",
-    category: `Two-wheeler Insurance`,
+    category: `Health Insurance`,
     type: "articles",
     img: a12,
+    date:`Apr 12,2021`,
     title: `Pitfalls of Not Buying Health Insurance Plan - Reasons`,
   },
   {
@@ -267,7 +301,7 @@ const resourceData = [
   },
   {
     id: "e6",
-    category: `Two-wheeler Insurance`,
+    category: `Two Wheeler Insurance`,
     type: "ebooks",
     img: e6,
     title: `Getting Started with Bike Insurance [E-book]`,
@@ -308,4 +342,4 @@ const resourceData = [
     title: `Cashless vs Reimbursement Claims [E-Book]`,
   },
 ];
-export { mainContentData, resourceData };
+export { mainContentData, resourceData, resourceCategories };

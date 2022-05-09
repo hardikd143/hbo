@@ -37,6 +37,15 @@ function App() {
 
           <Route path="resources" element={<Resources resourceType="resources" />} />
           <Route
+            path=":url"
+            element={<SingleResource  />}
+          >
+            <Route
+            path=":category"
+            element={<SingleResource/>}
+            />
+          </Route>
+          {/* <Route
             path="articles"
             element={<SingleResource resourceType="articles" />}
           />
@@ -47,7 +56,7 @@ function App() {
           <Route
             path="ebooks"
             element={<SingleResource resourceType="ebooks" />}
-          />
+          /> */}
         </Route>
         <Route path="/support/home" element={<HelpLayout />}>
           <Route index element={<HelpIndex />} />

@@ -113,6 +113,9 @@ body {
   background: var(--primary2black) !important;
   line-height: 1.5;
   font-size: 0.875rem;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 ul {
   list-style-type: none;
@@ -278,12 +281,11 @@ h4 {
 .InDev {
   text-align: center;
   color: var(--white);
-  &.b2w{
+  &.b2w {
     color: var(--black2white);
-    &::before{
+    &::before {
       border-color: var(--black2white);
     }
-    
   }
   margin: 3rem auto;
   position: relative;
@@ -298,13 +300,13 @@ h4 {
     bottom: -8px;
     animation: inDev forwards 2s infinite;
     @keyframes inDev {
-      0%{
+      0% {
         transform: scale(0.2, 1);
       }
-      50%{
+      50% {
         transform: scale(0.5, 1);
       }
-      100%{
+      100% {
         transform: scale(0.2, 1);
       }
     }

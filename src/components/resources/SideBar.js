@@ -10,7 +10,7 @@ const SideBar = ({activeLink}) => {
         {sideBarLinks.links.map((item, index) => {
           const { label, icon, url ,type} = item;
           return (
-            <Link to={url} key={index} className={`${activeLink === type?'active':''}`}>
+            <Link to={`/${url}`} key={index} className={`${activeLink === type?'active':''}`}>
               {icon} {label}
             </Link>
           );

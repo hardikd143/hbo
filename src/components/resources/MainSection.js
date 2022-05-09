@@ -4,12 +4,12 @@ import img2 from "../../img/resource-main-2.svg";
 import "../../css/resource.scss";
 import { useResourceContext } from "../../resContext";
 const MainSection = ({ resType }) => {
-  const { mainContent, getContent } = useResourceContext();
-  useEffect(()=>{
-    getContent(resType);
-  })
+  const { mainContent, getMainContent } = useResourceContext();
+  useEffect(() => {
+    getMainContent(resType);
+  });
   // console.log(mainContent);
-  const {heading,desc}= mainContent
+  const { heading, desc } = mainContent;
   return (
     <div className="mainSection ">
       <div className="mainImg hide-md">

@@ -1,17 +1,17 @@
 import React from "react";
-import MainContent from "../components/resources/MainContent";
+import MainResourcePageContent from "../components/resources/MainResourcePageContent";
 import MainSection from "../components/resources/MainSection";
 import SideBar from "../components/resources/SideBar";
 import { useResourceContext } from "../resContext";
 const Resources = ({ resourceType }) => {
-  const {getActive} = useResourceContext();
+  const {getActiveLink} = useResourceContext();
   return (
     <>
       <MainSection resType={resourceType} />
       <div className="rPage">
         <div className="resource-page-content">
-          <SideBar activeLink={getActive(resourceType)} />
-          <MainContent />
+          <SideBar activeLink={getActiveLink(resourceType)} />
+          <MainResourcePageContent />
         </div>
       </div>
     </>
