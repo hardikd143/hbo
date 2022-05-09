@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../../img/resource-main-1.svg";
 import img2 from "../../img/resource-main-2.svg";
 import "../../css/resource.scss";
 import { useResourceContext } from "../../resContext";
 const MainSection = ({ resType }) => {
   const { mainContent, getContent } = useResourceContext();
-  getContent(resType);
+  useEffect(()=>{
+    getContent(resType);
+  })
   // console.log(mainContent);
   const {heading,desc}= mainContent
   return (

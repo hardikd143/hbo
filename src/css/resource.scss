@@ -56,6 +56,7 @@
   display: flex;
   max-width: 1170px;
   padding: 1.25rem;
+  margin: auto;
   .resource-sidebar {
     @media screen and (max-width: 1024px) {
       display: none !important;
@@ -102,11 +103,11 @@
         grid-template-columns: 1fr;
       }
       .wrapper {
-        border: 1px solid var(--dark5002light750);
+        border: 1px solid var(--dark2502light250);
         border-radius: 0.625rem;
         overflow: hidden;
         &:hover {
-          border: 1px solid var(--dark5002light750);
+          box-shadow: 0 0 8px var(--dark2502light250);
         }
         .img-wrapper {
           height: 150px;
