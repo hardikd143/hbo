@@ -7,7 +7,10 @@
   .home-main-img-wrapper {
     padding: 0 0.625rem;
     width: 100%;
+    height: 100%;
     text-align: center;
+    display: grid;
+    align-items: center;
     img {
       max-width:500px !important;
     }
@@ -15,7 +18,7 @@
 
   @media screen and (min-width: 768px) {
     display: grid;
-    align-items: center;
+    align-items: flex-start;
     grid-template-columns: 1fr 520px 1fr;
   }
   @media screen and (max-width: 768px) {

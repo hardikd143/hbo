@@ -5,12 +5,13 @@ import BreadCrumb from "../components/singleArticleResource/BreadCrumb";
 import { resourceData } from "../data/resource";
 import "../css/singleArticle.scss";
 import InsureFamily from "../components/singleArticleResource/InsureFamily";
+import MoreContent from "../components/singleArticleResource/MoreContent";
 const SingleArticlePage = () => {
   const { article_url: url } = useParams();
   const articleData = resourceData
     .filter((item) => item.type === "articles")
     .find((item) => item.article_url === url);
-  const { img, title, type, category, date, mainContent,primContent } = articleData;
+  const { img, title, date, mainContent,primContent,moreContent } = articleData;
   useEffect(() => {
     const setMainContent = (str) => {
       let para = document.querySelector("p.mainContent");
@@ -38,6 +39,9 @@ const SingleArticlePage = () => {
             <img src={img} alt="img" className="w-100 img" />
             {primContent && <p className="contentText">{primContent}</p>
             }
+            <div className="more-content">
+            <MoreContent data={moreContent}/>
+            </div>
           </div>
           <div className="content-left">
             <InsureFamily />
