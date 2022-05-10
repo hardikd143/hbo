@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Capitalize from "../../Capitalize";
 
 const BreadCrumb = ({ type, category, article_url, title }) => {
-  console.log(type, category, article_url);
   return (
     <div className="article-breadcrumb customBreadCrumb">
       <p>

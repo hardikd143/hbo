@@ -28,7 +28,6 @@ const TermsConditions = () => {
           <div className="wrapper">
             {list.map((item, index) => {
               const { title, paras } = item;
-              console.log(paras);
               return (
                 <>
                   <div key={index}>

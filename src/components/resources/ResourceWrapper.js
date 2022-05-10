@@ -22,7 +22,7 @@ const ResourceWrapper = ({ item, mainPage }) => {
         <p className="maintitle">{title}</p>
 
         {mainPage === "articles" && (
-          <div className="articlePage-content">
+          <div className="articlePage-content article-date">
             <p>Team acko</p>
             <div className="dot"></div>
             <p>{date}</p>
