@@ -1,0 +1,48 @@
+.article-content {
+  padding: 1rem 0;
+  
+  .article-main-content {
+    display: flex;
+    .content-right {
+      width: 65%;
+    }
+    .content-left {
+      width: 35%;
+      padding: 0 1.25rem;
+      .InsureFamily-wrapper {
+        width: 100%;
+        border-radius: 0.625rem;
+        border: 1px solid var(--dark2502light250);
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media screen and (max-width: 768px) {
+          display: none;
+          
+        }
+        h2 {
+          color: var(--dark7502light750);
+          font-weight: 700;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+          padding-bottom: 0.625rem;
+          margin: 0;
+        }
+        p{
+            color: var(--dark5002light500);
+            font-weight: 600;
+            margin: 0.625rem 0 1.25rem;
+            line-height: 1.5rem;
+        }
+        .btn{
+            padding: 0.4rem 0.8rem;
+            margin-bottom: 1rem;
+        }
+        a.tnc{
+            color: var(--primary2white);
+        }
+      }
+    }
+  }
+}

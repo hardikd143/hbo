@@ -14,6 +14,7 @@ import HelpLayout from "./HelpLayout";
 // import Ebooks from './Ebooks'
 import SingleResource from "./SingleResource";
 import SingleArticlePage from "./SingleArticlePage";
+import TermsConditions from "./TermsConditions";
 
 export {
   BikeInsurance,
@@ -32,4 +33,5 @@ export {
   SingleHelpArticle,
   SingleArticlePage,
   HelpLayout,
+  TermsConditions
 };

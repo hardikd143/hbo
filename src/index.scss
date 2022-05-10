@@ -36,6 +36,7 @@
     --black2white: rgb(32, 32, 32);
     --black1002primary: rgb(32, 32, 32, 0.1);
     --softblack2white: #414a53;
+    --softblack2light750: #414a53;
     --primary2black: rgb(93, 38, 201);
     --black2primary: rgb(32, 32, 32);
     --lightgrey2black: #d3d3d3;
@@ -74,6 +75,7 @@
     --black2white: #fff;
     --black1002primary: rgb(93, 38, 201);
     --softblack2white: #fff;
+    --softblack2light750: rgb(255,255,255,0.75);
     --black2primary: rgb(93, 38, 201);
     --lightgrey2black: rgb(32, 32, 32);
     --light22light750: rgb(255, 255, 255, 0.75);
@@ -323,7 +325,7 @@ h4 {
     color: var(--primary2white);
     .main-logo {
       background: var(--primary2white);
-      color: var(--white2primary);
+      color: var(--white2black);
     }
     svg {
       color: var(--primary2white) !important;
@@ -348,6 +350,18 @@ h4 {
     }
     .insuranceTitle-secondary {
       color: var(--dark7502light750);
+    }
+  }
+}
+.customBreadCrumb {
+  // padding: 0 1.25rem;
+  p {
+    color: var(--dark5002light500) !important;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1.875rem;
+    a {
+      color: var(--dark5002light500) !important;
     }
   }
 }

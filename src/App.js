@@ -16,8 +16,9 @@ import {
   Error,
   HelpIndex,
   SingleHelpArticle,
-  HelpLayout,
   SingleArticlePage,
+  HelpLayout,
+  TermsConditions
 } from "./Pages/index";
 import { useGlobalContext } from "./context";
 
@@ -47,6 +48,7 @@ function App() {
             <Route path=":category" element={<SingleResource />}></Route>
           </Route>
           <Route path="article/:article_url" element={<SingleArticlePage />} />
+          <Route path="terms-and-conditions" element={<TermsConditions/>}/>
           {/* <Route
             path="articles"
             element={<SingleResource resourceType="articles" />}
