@@ -4,23 +4,22 @@
 
 import React from "react";
 import CategoryTab from "./CategoryTab";
-import PopularResource from "./PopularResource";
+import PopularSubResource from "./PopularSubResource";
 import ResourceWrapper from "./ResourceWrapper";
 
-const Content = ({ data, mainPage, category }) => {
+const SubResourceContent = ({ data, mainPage, category }) => {
   // console.log(`mainPage is ${mainPage} and category is ${category}`);
   return (
     <div className="resource-content ">
       <CategoryTab mainPage={mainPage} category={category} />
       {category === "all" && (
-        <PopularResource data={data.slice(0, 4)} mainPage={mainPage} />
+        <PopularSubResource data={data.slice(0, 4)} mainPage={mainPage} />
       )}
       <h2 className="Header">
         All {mainPage} {category !== "all" ? `on ${category}` : ""}
       </h2>
       <div className="single-resource-wrapper">
         {data.map((item, index) => {
-          console.log(item);
           return (
             <ResourceWrapper key={index} item={item} mainPage={mainPage} />
           );
@@ -30,4 +29,4 @@ const Content = ({ data, mainPage, category }) => {
   );
 };
 
-export default Content;
+export default SubResourceContent;

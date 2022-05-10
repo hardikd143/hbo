@@ -1,4 +1,4 @@
-import ArogyaSanjeevani from "./ArogyaSanjeevani";
+import GroupHealthInsurance from "./GroupHealthInsurance";
 // import Articles from "./Articles";
 import BikeInsurance from "./BikeInsurance";
 import CarInsurance from "./CarInsurance";
@@ -12,11 +12,12 @@ import HelpIndex from "./HelpIndex";
 import SingleHelpArticle from "./SingleHelpArticle";
 import HelpLayout from "./HelpLayout";
 // import Ebooks from './Ebooks'
-import SingleResource from './SingleResource'
+import SingleResource from "./SingleResource";
+import SingleArticlePage from "./SingleArticlePage";
 
 export {
   BikeInsurance,
-  ArogyaSanjeevani,
+  GroupHealthInsurance,
   HealthInsurance,
   CarInsurance,
   Resources,
@@ -29,5 +30,6 @@ export {
   Error,
   HelpIndex,
   SingleHelpArticle,
+  SingleArticlePage,
   HelpLayout,
 };

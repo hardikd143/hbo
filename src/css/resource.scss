@@ -290,3 +290,14 @@
     }
   }
 }
+.btn-explore{
+  border: 2px solid var(--dark5002light500) !important;
+  padding: 0.5rem 1.5rem !important;
+  line-height: 2.5rem !important;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  &:hover{
+    border-color: var(--black2white) !important; 
+  }
+}

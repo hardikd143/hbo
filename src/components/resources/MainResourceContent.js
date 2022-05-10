@@ -3,9 +3,11 @@
 //
 
 import React from "react";
+import { Link } from "react-router-dom";
 import { mainContentData, resourceData } from "../../data/resource";
 import ResourceWrapper from "./ResourceWrapper";
-const MainContent = () => {
+import { MdOutlineKeyboardArrowRight } from "../../icons";
+const MainResourceContent = () => {
   return (
     <div className="resource-content resourcePage">
       <h2 className="mainHeading">All resources</h2>
@@ -17,9 +19,9 @@ const MainContent = () => {
         });
 
         return (
-          <div className="single-popular" key={index}>
+          <div className="single-popular mb-5" key={index}>
             <h2 className="Header">Popular {type}</h2>
-            <div className="single-resource-wrapper mb-5">
+            <div className="single-resource-wrapper  mb-4">
               {mainData.slice(0, 3).map((item, index) => {
                 return (
                   <ResourceWrapper
@@ -30,6 +32,7 @@ const MainContent = () => {
                 );
               })}
             </div>
+            <Link to={`/${type}`} className="btn btn-lg btn-transparent b2w btn-explore">Explore more {type} <MdOutlineKeyboardArrowRight/></Link>
           </div>
         );
       })}
@@ -37,4 +40,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default MainResourceContent;

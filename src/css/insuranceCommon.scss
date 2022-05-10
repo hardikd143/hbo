@@ -116,7 +116,7 @@
     }
   }
   .InsTab-Content {
-    padding-top: 1.8rem ;
+    padding-top: 1.8rem;
     @media screen and (max-width: 768px) {
       padding: 1rem 0;
     }
@@ -386,19 +386,19 @@
   }
 }
 .numberedcontent {
-  h3.header{
+  h3.header {
     margin-bottom: 1.25rem;
   }
-  p.subTitle{
+  p.subTitle {
     color: var(--softblack2white) !important;
     margin-top: 0 !important;
     // margin
-    @media screen and (min-width:768px) {
-      padding-right:0.75rem ;
-      padding-left:0.75rem ;
+    @media screen and (min-width: 768px) {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
     }
   }
-  
+
   .numberedList-wrapper {
     .numberedList-item {
       padding: 0.75rem;

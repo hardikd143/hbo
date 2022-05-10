@@ -1,6 +1,6 @@
 import { React } from "react";
 import { useParams } from "react-router-dom";
-import Content from "../components/resources/Content";
+import SubResourceContent from "../components/resources/SubResourceContent";
 import MainSection from "../components/resources/MainSection";
 import SideBar from "../components/resources/SideBar";
 import { useResourceContext } from "../resContext";
@@ -21,7 +21,7 @@ const SingleResource = () => {
       <div className=" rPage ">
         <div className="resource-page-content m-auto">
           <SideBar activeLink={getActiveLink(url)} />
-          <Content
+          <SubResourceContent
             data={getResourceContent(url ,Capitalize(finalCategory))}
             category={finalCategory}
             mainPage={url}

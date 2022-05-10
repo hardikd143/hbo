@@ -1,7 +1,7 @@
 import React from "react";
 import ResourceWrapper from "./ResourceWrapper";
 
-const PopularResource = ({ data, mainPage }) => {
+const PopularSubResource = ({ data, mainPage }) => {
   return (
     <>
       <div className="resource-popular">
@@ -23,4 +23,4 @@ const PopularResource = ({ data, mainPage }) => {
   );
 };
 
-export default PopularResource;
+export default PopularSubResource;

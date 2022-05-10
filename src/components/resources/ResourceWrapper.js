@@ -2,10 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "../../icons";
 const ResourceWrapper = ({ item, mainPage }) => {
-  const { img, title, type, date } = item;
-  console.log(img);
+  const { img, category, title, type, date } = item;
   return (
-    <Link to={`/${type}`} className="resourceWrapper">
+    <Link
+      to={
+        mainPage === "guides"
+          ? `/${category.toLowerCase().replaceAll(" ", "-")}`
+          : mainPage === "articles"
+          // ? `${category.toLowerCase().replaceAll(" ", "-")}/${item.article_url}`
+          ? `/article/${item.article_url}`
+          : `/${type}`
+      }
+      className="resourceWrapper"
+    >
       <div className="img-wrapper">
         <img src={img} alt="img" />
       </div>

@@ -17,7 +17,7 @@ const sublinks = [
       {
         label: "bike insurance",
         icon: <RiMotorbikeLine />,
-        url: "/bike-insurance",
+        url: "/two-wheeler-insurance",
       },
       {
         label: "health insurance",
@@ -25,9 +25,9 @@ const sublinks = [
         url: "/health-insurance",
       },
       {
-        label: "arogya sanjeevani",
+        label: "group health insurance",
         icon: <RiHealthBookLine />,
-        url: "/arogya-sanjeevani",
+        url: "/group-health-insurance",
       },
     ],
   },

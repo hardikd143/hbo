@@ -4,12 +4,9 @@ import { useGlobalContext } from "../context";
 import sublinks from "../data/data";
 
 const Submodal = () => {
-  const {
-    toggleSubmodal,
-    isSubmodalOpen,
-  } = useGlobalContext();
+  const { toggleSubmodal, isSubmodalOpen } = useGlobalContext();
   return (
-    <div 
+    <div
       className={`container-fluid ${
         isSubmodalOpen ? "submodal show" : "submodal"
       }`}
@@ -19,7 +16,10 @@ const Submodal = () => {
           <Link to="/login" className="btn btn-login-submodal btn-md btn-black">
             login
           </Link>
-          <Link to="/support/home" className="btn btn-help-submodal  btn-md btn-transparent text-white text-capitalize">
+          <Link
+            to="/support/home"
+            className="btn btn-help-submodal  btn-md btn-transparent text-white text-capitalize"
+          >
             help
           </Link>
         </div>
@@ -39,7 +39,7 @@ const Submodal = () => {
                       onClick={() => toggleSubmodal()}
                     >
                       {icon}
-                      {label}
+                      <span>{label}</span>
                     </Link>
                   );
                 })}

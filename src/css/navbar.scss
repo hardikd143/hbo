@@ -26,7 +26,7 @@ nav {
     .nav-left {
       display: grid;
       grid-gap: 2rem;
-      .btn-help{
+      .btn-help {
         color: inherit;
       }
       .menu-icon {
@@ -65,7 +65,7 @@ nav {
     transform: translateX(-50%);
   }
   .subLinks {
-    width: 13rem;
+    width: 15rem;
     display: block;
     color: var(--black);
     text-transform: capitalize;
@@ -76,6 +76,7 @@ nav {
     align-items: center;
     // transition: var(--transition);
     border-radius: var(--radius);
+
     &:hover {
       background: var(--black100);
     }
@@ -111,20 +112,20 @@ nav {
       justify-content: space-between;
       align-items: center;
       .btn-login-submodal {
-        background: var(--primary) ;
+        background: var(--primary);
         &::before {
           display: none;
         }
       }
       .btn-help-submodal {
-        color: var(--primary) ;
+        color: var(--primary);
       }
       @media screen and (max-width: 768px) {
-        .btn-login-submodal{
-          background: var(--black2white) ;
+        .btn-login-submodal {
+          background: var(--black2white);
           color: var(--white2black);
         }
-        .btn-help-submodal{
+        .btn-help-submodal {
           color: var(--white2black);
         }
       }
@@ -143,9 +144,16 @@ nav {
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        .subLinks{
+          width: 100% !important;
+        }
+      }
       .subLinks {
-        width: 13rem;
+        width: calc(50% - 0.5rem);
         display: block;
+        
         color: var(--black);
         text-transform: capitalize;
         line-height: 2.5rem;
@@ -160,6 +168,13 @@ nav {
         }
         svg {
           margin-right: 1rem;
+        }
+        span {
+          flex-grow: 1;
+
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
     }

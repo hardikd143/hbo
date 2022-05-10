@@ -160,6 +160,10 @@ h4 {
   &.btn-transparent {
     background: none !important;
     color: var(--black) !important;
+    &.b2w{
+      color: var(--black2white) !important;
+
+    }
     &:before {
       border-color: transparent;
     }
@@ -309,6 +313,41 @@ h4 {
       100% {
         transform: scale(0.2, 1);
       }
+    }
+  }
+}
+.body-white {
+  background: var(--white2black) !important;
+  nav {
+    border-bottom: 1px solid var(--dark2002light200);
+    color: var(--primary2white);
+    .main-logo {
+      background: var(--primary2white);
+      color: var(--white2primary);
+    }
+    svg {
+      color: var(--primary2white) !important;
+    }
+  }
+  .insurance-main {
+    border-color: var(--dark2002light200);
+  }
+  .main-left.health-ins {
+    align-items: flex-start;
+    text-align: left !important;
+
+    .insuranceTitle-main {
+      color: var(--softblack2white) !important;
+      font-size: 2rem;
+      line-height: 2.2rem;
+      text-align: left !important;
+      @media screen and (max-width:500px){
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+      }
+    }
+    .insuranceTitle-secondary {
+      color: var(--dark7502light750);
     }
   }
 }

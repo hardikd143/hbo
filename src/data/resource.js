@@ -175,6 +175,7 @@ const resourceData = [
     img: a1,
     date:`Nov 12,2021`,
     title: `Essential Tips to Reduce Your Two Wheeler Insurance Premium`,
+    article_url:`essential-tips-to-reduce-your-bike-insurance-premium`
   },
   {
     id: "a2",
@@ -183,6 +184,7 @@ const resourceData = [
     img: a2,
     date:`Dec 10,2021`,
     title: `5 Things to Know About Car Insurance for Beginners`,
+    article_url:`5-things-to-know-about-car-insurance-for-beginners`
   },
   {
     id: "a3",
@@ -191,6 +193,7 @@ const resourceData = [
     img: a3,
     date:`Apr 12,2021`,
     title: `Room Rent Capping Under Health Insurance Coverage (Room Rent Limit)`,
+    article_url:`room-rent-limit`,
   },
   {
     id: "a4",
@@ -199,6 +202,7 @@ const resourceData = [
     img: a4,
     date:`Nov 8,2021`,
     title: `Corporate Health Insurance When Changing Jobs: Things to Consider`,
+    article_url:`corporate-health-insurance-when-changing-jobs`,
   },
   {
     id: "a5",
@@ -207,6 +211,7 @@ const resourceData = [
     img: a5,
     date:`Jul 22,2021`,
     title: `A Quick Guide on Group Insurance for Your Employees`,
+    article_url:`a-quick-guide-on-group-insurance-for-your-employees`,
   },
   {
     id: "a6",
@@ -215,6 +220,7 @@ const resourceData = [
     img: a6,
     date:`Nov 17,2021`,
     title: `Basic Mistakes to Avoid When Renewing Two Wheeler Insurance Online`,
+    article_url:`mistakes-to-avoid-when-renewing-two-wheeler-insurance-online`,
   },
   {
     id: "a7",
@@ -223,6 +229,7 @@ const resourceData = [
     img: a7,
     date:`Apr 7,2021`,
     title: `Difference Between Network Hospitals & Non-network Hospitals`,
+    article_url:`difference-between-network-and-non-network-hospitals`,
   },
   {
     id: "a8",
@@ -231,6 +238,7 @@ const resourceData = [
     img: a8,
     date:`Apr 27,2022`,
     title: `Car Insurance Online Vs Offline: Which is Better?`,
+    article_url:`online-vs-offline-which-is-better`,
   },
   {
     id: "a9",
@@ -239,6 +247,7 @@ const resourceData = [
     img: a9,
     date:`Nov 8,2021`,
     title: `What Is Group Health Insurance Plan And How Does It Work?`,
+    article_url:`what-is-group-health-insurance-plan-and-how-does-it-work`,
   },
   {
     id: "a10",
@@ -247,6 +256,7 @@ const resourceData = [
     img: a10,
     date:`Nov 15,2021`,
     title: `Cashless Car Insurance Policy - Need of The Hour`,
+    article_url:`cashless`,
   },
   {
     id: "a11",
@@ -255,6 +265,7 @@ const resourceData = [
     img: a11,
     date:`Oct 22,2021`,
     title: `Myths About Buying Two Wheeler Insurance Online Vs Offline`,
+    article_url:`myths-about-buying-bike-insurance`,
   },
   {
     id: "a12",
@@ -263,6 +274,7 @@ const resourceData = [
     img: a12,
     date:`Apr 12,2021`,
     title: `Pitfalls of Not Buying Health Insurance Plan - Reasons`,
+    article_url:`consequences-of-not-having-medical-insurance`,
   },
   {
     id: "e1",

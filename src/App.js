@@ -3,7 +3,7 @@ import Layout from "./Pages/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   BikeInsurance,
-  ArogyaSanjeevani,
+  GroupHealthInsurance,
   HealthInsurance,
   CarInsurance,
   Resources,
@@ -17,6 +17,7 @@ import {
   HelpIndex,
   SingleHelpArticle,
   HelpLayout,
+  SingleArticlePage,
 } from "./Pages/index";
 import { useGlobalContext } from "./context";
 
@@ -30,21 +31,22 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="bike-insurance" element={<BikeInsurance />} />
+          <Route path="two-wheeler-insurance" element={<BikeInsurance />} />
           <Route path="health-insurance" element={<HealthInsurance />} />
           <Route path="car-insurance" element={<CarInsurance />} />
-          <Route path="arogya-sanjeevani" element={<ArogyaSanjeevani />} />
-
-          <Route path="resources" element={<Resources resourceType="resources" />} />
           <Route
-            path=":url"
-            element={<SingleResource  />}
-          >
-            <Route
-            path=":category"
-            element={<SingleResource/>}
-            />
+            path="group-health-insurance"
+            element={<GroupHealthInsurance />}
+          />
+
+          <Route
+            path="resources"
+            element={<Resources resourceType="resources" />}
+          />
+          <Route path=":url" element={<SingleResource />}>
+            <Route path=":category" element={<SingleResource />}></Route>
           </Route>
+          <Route path="article/:article_url" element={<SingleArticlePage />} />
           {/* <Route
             path="articles"
             element={<SingleResource resourceType="articles" />}

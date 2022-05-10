@@ -1,5 +1,5 @@
 import React from "react";
-import MainResourcePageContent from "../components/resources/MainResourcePageContent";
+import MainResourcePageContent from "../components/resources/MainResourceContent";
 import MainSection from "../components/resources/MainSection";
 import SideBar from "../components/resources/SideBar";
 import { useResourceContext } from "../resContext";
