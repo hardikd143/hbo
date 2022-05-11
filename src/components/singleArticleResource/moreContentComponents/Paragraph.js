@@ -1,7 +1,7 @@
 import React from 'react'
 
-const CommonParagraph = ({data}) => {
+const Paragraph = ({data}) => {
     return <p className="commonParagraph">{data}</p>;
 }
 
-export default CommonParagraph
+export default Paragraph

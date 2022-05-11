@@ -8,7 +8,6 @@ import PopularSubResource from "./PopularSubResource";
 import ResourceWrapper from "./ResourceWrapper";
 
 const SubResourceContent = ({ data, mainPage, category }) => {
-  // console.log(`mainPage is ${mainPage} and category is ${category}`);
   return (
     <div className="resource-content ">
       <CategoryTab mainPage={mainPage} category={category} />

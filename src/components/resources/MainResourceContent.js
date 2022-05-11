@@ -12,7 +12,6 @@ const MainResourceContent = () => {
     <div className="resource-content resourcePage">
       <h2 className="mainHeading">All resources</h2>
       {mainContentData.slice(1, 4).map((ite, index) => {
-        // console.log(`maintype : ${type}`);
         const { type } = ite;
         const mainData = resourceData.filter((rsrc) => {
           return rsrc.type === type;

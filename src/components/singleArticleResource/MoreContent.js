@@ -1,12 +1,12 @@
 import React from "react";
-import CommonContent from "./moreContentComponents/Content";
+import Content from "./moreContentComponents/Content";
 const MoreContent = ({ data }) => {
-  const { contentData, contentType } = data;
+  const { contentData } = data;
   return (
     <>
       <div className="inner">
         {contentData.map((item, index) => {
-          return <CommonContent key={index} data={item} />;
+          return <Content key={index} data={item} />;
         })}
       </div>
     </>

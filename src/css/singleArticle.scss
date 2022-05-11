@@ -1,13 +1,13 @@
 .article-content {
-  padding-top: 1rem ;
-  padding-bottom: 1rem ;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   .article-main-content {
     display: flex;
     .content-right {
       width: 65%;
       @media screen and (max-width: 768px) {
-          width: 100%;
+        width: 100%;
       }
       .title {
         color: var(--black2white);
@@ -53,7 +53,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
+
         h2 {
           color: var(--dark7502light750);
           font-weight: 700;
@@ -80,37 +80,98 @@
   }
 }
 
-
-
-
-// more content 
-.more-content{
-    margin-top: 2rem;
-    h2.commonHeading{
-        font-size: 1rem;
-        margin: calc(1rem - 1px) 0 calc(0.25rem + 1px);
-        color: var(--black2white);
-        font-weight: 700;
-        line-height: 2rem;
-        @media screen and (min-width:500px) {
-            font-size: 1.375rem;
-        }
+// more content
+.more-content {
+  margin-top: 2rem;
+  h2 {
+    margin: calc(1rem - 1px) 0 calc(0.25rem + 1px);
+    color: var(--black2white);
+    letter-spacing: 0.02rem;
+    &.commonHeading {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 2rem;
+      @media screen and (min-width: 500px) {
+        font-size: 1.375rem;
+      }
     }
-    p.commonParagraph{
-        color: var(--black2white);
-        margin: calc(1rem - 1px) 0;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5rem;
-        overflow-wrap: break-word;
+    &.commonSmallHeading {
+      font-size: 0.875rem;
+      font-weight: 600;
+      @media screen and (min-width: 500px) {
+        font-size: 1.25rem;
+      }
     }
-    h3.commonNumberedHeading{
-        letter-spacing: unset;
-        margin: calc(1rem - 1px) 0 0.625rem;
-        font-weight: 600;
-        font-size: 0.875rem;
-        @media screen and (min-width:500px) {
-            font-size: 1.175rem;
-        }
+  }
+  p.commonParagraph {
+    color: var(--black2white);
+    margin: calc(1rem - 1px) 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    overflow-wrap: break-word;
+  }
+  h3.commonNumberedHeading {
+    letter-spacing: unset;
+    margin: calc(1rem - 1px) 0 0.625rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    @media screen and (min-width: 500px) {
+      font-size: 1.175rem;
     }
+  }
+  .smallNumbered-item {
+    display: flex;
+    position: relative;
+    span {
+      display: inline-block;
+      position: absolute;
+      &.item-index {
+        margin-top: 1.125rem;
+        left: -18px;
+        color: var(--dark7502light750);
+      }
+      &.dot {
+        margin-top: calc(1.75rem);
+        height: 0.375rem;
+        width: 0.375rem;
+        border-radius: 50%;
+        background: var(--dark7502light750);
+        left: -18px;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    &.centered {
+      text-align: center;
+    }
+    tr.tableHeading {
+      background: var(--light22primary);
+      color: var(--softblack2white);
+      width: 100%;
+    }
+    th,
+    td {
+      border: 1px solid var(--black1002primary);
+      padding: calc(0.625rem);
+      padding-left: calc(1.875rem);
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 0.875rem;
+      @media screen and (max-width: 500px) {
+        font-size: 0.625rem;
+        padding: calc(0.625rem) !important;
+      }
+    }
+    td {
+      color: var(--dark7502light750);
+      font-weight: 500;
+      vertical-align: super;
+    }
+  }
 }

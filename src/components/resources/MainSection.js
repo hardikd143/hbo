@@ -8,7 +8,6 @@ const MainSection = ({ resType }) => {
   useEffect(() => {
     getMainContent(resType);
   });
-  // console.log(mainContent);
   const { heading, desc } = mainContent;
   return (
     <div className="mainSection ">
