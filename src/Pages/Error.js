@@ -1,12 +1,17 @@
 import React from "react";
+import Helmet from "react-helmet";
 import { Link } from "react-router-dom";
 import Logo from "../components/Logo";
 import ThemeButton from "../components/ThemeButton";
 import "../css/error.scss";
 import errorImg from "../img/error.svg";
-const Error = () => {
+const Error = ({hideMainNav}) => {
   return (
     <div className="error-page">
+      {hideMainNav && <Helmet>
+        <body className="hideMainNav">
+          
+        </body></Helmet>}
       <header className="header common">
         <div className="container-lg header-inner">
           <Logo type="logo-purple" />

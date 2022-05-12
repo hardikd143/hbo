@@ -118,6 +118,11 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
+  &.hideMainNav{
+    nav{
+      display: none !important;
+    }
+  }
 }
 ul {
   list-style-type: none;

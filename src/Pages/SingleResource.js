@@ -6,6 +6,7 @@ import SideBar from "../components/resources/SideBar";
 import { useResourceContext } from "../resContext";
 // import { mainContentData, resourceData } from "../data/resource";
 import Capitalize from "../Capitalize";
+// import Error from "./Error";
 const SingleResource = () => {
   let { url, category } = useParams();
   const { getActiveLink, getResourceContent } = useResourceContext();

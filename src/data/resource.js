@@ -908,6 +908,7 @@ const resourceData = [
         },
         {
           type: `ParagraphTitled`,
+          isArray: false,
           content: {
             title: `Scenario 1 : `,
             para: `Mr. Mehta gets sick and needs to be hospitalised. He has availed of the cashless facility from his insurance company. He observes that one of the network hospitals is in proximity and offers the treatment suggested by medical practitioners. He gets hospitalised in one of the network hospitals and Mr. Mehta/his family member gets in touch with the Third-party Administrator (TPA) desk at the hospital. To simplify things, TPA acts as intermediaries between policyholders and insurance providers and plays a vital role in the smooth processing of health insurance claims.`,
@@ -923,6 +924,7 @@ const resourceData = [
         },
         {
           type: `ParagraphTitled`,
+          isArray: false,
           content: {
             title: `Scenario 2 : `,
             para: `However, there is also a possibility that Mr. Mehta gets admitted to a network hospital but has not availed of the cashless benefit. In this case, Mr. Mehta needs to undergo treatment, get discharged, and claim reimbursement of the medical expenses. To claim reimbursement, he must follow a long and tedious process. First, he will collate all the bills and relevant documents and then share them with the insurance provider.`,
@@ -934,6 +936,7 @@ const resourceData = [
         },
         {
           type: `ParagraphTitled`,
+          isArray: false,
           content: {
             title: `Scenario 3 : `,
             para: `Mr. Mehta gets admitted to a non-network hospital. This may be because of the unavailability of the treatment in a nearby network hospital or an emergency. In this case, it does not matter if he has availed of the cashless facility or not. The process would remain the same as Scenario 2. He will get the treatment, pay the bills, get discharged, and then claim reimbursement.`,
@@ -1362,7 +1365,175 @@ const resourceData = [
     article_url: `cashless`,
     mainContent: `For new car buyers, the car insurance aspect of the policy is usually handled by the vehicle dealer. Thereafter, they only think about car insurance either at the time of policy renewal or in the event of a claim. The policy can be renewed via the car dealer but a claim can only be settled by the insurance company. Thus, it is important to know about the claim settlement process. This article is about the steps to claim cashless car insurance in India.`,
     moreContent: {
-      contentData: [{}],
+      contentData: [
+        {
+          type: `Paragraph`,
+          content: `Car insurance companies work hard to make the car insurance process extremely convenient for policyholders. They try to make all the processes associated with car insurance super simple. When it comes to claim settlements, you as a Comprehensive Car Insurance policyholder have two options: Reimbursement Claim Process and the Cashless Claim Process. The following sections will help you understand the Cashless Process and the steps to claim cashless car insurance in India.`,
+        },
+        {
+          type: `Heading`,
+          content: `What is the Cashless Claims Process?`,
+        },
+        {
+          type: `Paragraph`,
+          content: `A Cashless Claim is a type of claim where the garage and the hospital settle most of the bill among themselves provided you meet the terms and conditions. All you must account for is the depreciation cost, the deductibles cost, and any other repair cost that is not covered by the policy. A noteworthy advantage of this type of process is that if the repair amount is huge, you do not need to arrange for it immediately, which is the case in the Reimbursement Process. More on that later.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `A Cashless Claim is possible because of the tie-ups between insurance companies and the garages. The garages that have a tie-up with insurers regarding cashless claim settlements are termed as Network Garages. As the garage and the insurer have a tie-up, the process between the two is streamlined and usually, the claim gets settled quickly and smoothly.`,
+        },
+        {
+          type: `Heading`,
+          content: `How to Claim Cashless Car Insurance in India?`,
+        },
+        {
+          type: `Paragraph`,
+          content: `To raise a cashless car insurance claim in India, you need to inform the insurance company about the accident or the damage instantly. If it is an accident case and the accident is a massive one, they will send their surveyor on the spot. If not, then they might ask you to take the vehicle to a network garage or they might tow it themselves. This depends upon the insurer. In this case, the surveyor will have a look at the vehicle at the garage.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Once the surveyor ascertains the damage and discusses it with the garage, the repair work will begin and you will be notified about the approximate bill and the insurance coverage amount. The insurer will cover the expenses as per the inclusions and the terms and conditions of the policy. The balance amount needs to be settled by you. This balance amount is marginal as compared to the entire bill amount.`,
+        },
+        {
+          type: `SmallHeading`,
+          content: `How Does Cashless Claim Process Work?`,
+        },
+        {
+          type: `Paragraph`,
+          content: `The cashless car insurance process works on trust, coordination, and professionalism. There needs to be shared trust between the policyholder, the garage, and the insurer. All parties need to coordinate effectively and act professionally.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `The Cashless Claims process works based on the tie-up between the garage and the insurer. In some cases, there might not be an official tie-up, but even then, the insurer might coordinate with the garage and settle the claim in a cashless manner for the policyholder’s convenience. Some insurers have a list of network garages while Acko has almost all as Cashless Garages.`,
+        },
+        {
+          type: `Heading`,
+          content: `Steps to Claim Cashless Car Insurance:`,
+        },
+        {
+          type: `Paragraph`,
+          content: `The exact process to claim cashless car insurance might differ from one car insurance company to another. There might be subtle changes in the process based on the insurer’s tech support and overall strategy. Here’s an overview of the cashless car insurance in a stepwise manner.`,
+        },
+        {
+          type: `ParagraphTitled`,
+          isArray: true,
+          content: [
+            {
+              title: `Step 1: `,
+              para: `Contact your insurance company either by calling them or sending an email. Nowadays, some insurers have a dedicated section on their website/app to initiate a claim process. For example, Acko Login.`,
+            },
+            {
+              title: `Step 2: `,
+              para: `Share the details about the car damage.`,
+            },
+            {
+              title: `Step 3: `,
+              para: `Follow the stated process. For example, in case of a theft, you might be asked to file a First Information Report and share other supporting documents.`,
+            },
+            {
+              title: `Step 4: `,
+              para: `For accident claims, the surveyor might visit the accident spot. Otherwise, the car needs to be taken to the network garage and the surveyor will have a look at the damages there.`,
+            },
+            {
+              title: `Step 5: `,
+              para: `The surveyor and the mechanic will discuss and let you know the repair cost and the amount covered by the policy based on the coverage and the applicable terms and conditions.`,
+            },
+            {
+              title: `Step 6: `,
+              para: `The car will be repaired and the bill will be settled between the garage and the car insurance company. The balance (deductibles) amount needs to be paid by you to the garage.`,
+            },
+            {
+              title: `Step 7: `,
+              para: `Contact your insurance company either by calling them or sending an email. Nowadays, some insurers have a dedicated section on their website/app to initiate a claim process. For example, Acko Login.`,
+            },
+            {
+              title: `Step 1: `,
+              para: `Contact your insurance company either by calling them or sending an email. Nowadays, some insurers have a dedicated section on their website/app to initiate a claim process. For example, Acko Login.`,
+            },
+          ],
+        },
+        {
+          type: `Paragraph`,
+          content: `Note: In some cases, the towing of the vehicle to the garage and the delivery of the repaired vehicle is performed by the car insurance company.`,
+        },
+        {
+          type: `Heading`,
+          content: `Mandatory Documents While Registering for Your Car Insurance Claim:`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Nowadays, digital-first insurers do not ask for a list of documents. They are not in favour of form-filling either. However, there might be instances where you may have to scan some documents and share them with them along with the damaged car’s photograph. They might also ask for a video of the damaged car. Some traditional insurance companies still rely on form-filling and ask for a list of documents to be submitted while registering a car insurance claim. The following list will give you an idea about these documents. Note that the requirements may vary from one insurer to another.`,
+        },
+        {
+          type: `SmallNumberedContent`,
+          ordered: false,
+          content: [
+            `Car insurance policy.`,
+            `Driving License.`,
+            `Registration Certificate.`,
+            `First Information Report from the police (for accidents).`,
+            `Cancelled cheque.`,
+            `Policyholder’s identity proof. For example, Aadhaar Card details.`,
+            `Claim form.`,
+          ],
+        },
+        {
+          type: `Heading`,
+          content: `Reasons Your Claim Is Being Rejected:`,
+        },
+        {
+          type: `Paragraph`,
+          content: `There can be several reasons why your claim might be rejected by the insurer. Here are some instances that might lead to the rejection of cashless car insurance claims in India.`,
+        },
+        {
+          type: `NumberedContent`,
+          content: [
+            {
+              heading: `Invalid Policy`,
+              para: [
+                `You cannot raise a claim against an expired policy. Your policy needs to be active at the time the accident or the damages to the car took place. Car insurance companies will reject the claim even if it is raised just one day after the policy’s expiry date.`,
+              ],
+            },
+            {
+              heading: `Wrong Cover`,
+              para: [
+                `You cannot raise a claim for Own Damage against a Liability-only policy. You need a Comprehensive Plan for that. The moment you raise a claim, the insurer will check whether the reason the claim is raised for is covered in the policy’s inclusions or not. If it is not included, your claim will be rejected.`,
+              ],
+            },
+            {
+              heading: `Incomplete Documentation`,
+              para: [
+                `Due to digitisation, tech-savvy insurers do not rely too much on documentation. However, if your claim application demands specific documents such as the First Information Report (FIR for the accident), then you need to submit the same. Without such documents, the claim request won’t move ahead.`,
+              ],
+            },
+            {
+              heading: ` Disobeying the Protocol`,
+              para: [
+                `In the Cashless Claim process, it is crucial to wait for the insurance company’s representative to have a look at the car before it is repaired. If you repair it beforehand, the claim might not be honoured as the insurance company will not know the extent of the car’s damage first-hand.`,
+              ],
+            },
+            {
+              heading: `The Exclusions Category`,
+              para: [
+                `A car insurance policy comes with a set of exclusions. What this set comprises are events wherein the insurance company is not liable to pay the claim. For example, drunk driving is an exclusion. So is driving with an invalid driving license. Thus, if you raise a car accident claim and it is found that you were driving drunk or did not have a valid driving license, the insurer can reject your claim.`,
+              ],
+            },
+          ],
+        },
+
+        {
+          type: `Heading`,
+          content: `How is The Cashless Claims Process Different from The Reimbursement Claims Process?`,
+        },
+        {
+          type: `Paragraph`,
+          content: `If you are wondering which is better between the cashless and the reimbursement process, then there is no definite answer. The answer depends upon your choice. For some, one might be better over another. For example, if a policyholder wants to repair the damaged car at a friend’s garage that is not a part of the insurer’s network, the policyholder might go for the Reimbursement Process.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `The fundamental difference between the two processes is that the claim is majorly settled between the insurer and the garage in the cashless process. And you must get the car repaired, settle the bill with the garage, and then file a Reimbursement Claim. As per this fundamental difference, the Cashless Process does seem to score over the Reimbursement Process in terms of convenience.`,
+        },
+      ],
     },
   },
   {
@@ -1375,7 +1546,80 @@ const resourceData = [
     article_url: `myths-about-buying-bike-insurance`,
     mainContent: `The decision to buy two-wheeler insurance online is often met with hesitation and confusion. In the absence of the physical document in the online process, you may have doubts about the genuineness of the insurance. There are myths and misconceptions that may deter you from buying insurance online. This article busts common myths about buying two-wheeler insurance online when compared to the offline method.`,
     moreContent: {
-      contentData: [{}],
+      contentData: [
+        {
+          type: `Heading`,
+          content: `Myths About Buying Bike Insurance Online Vs. Offline
+          `,
+        },
+        {
+          type: `Paragraph`,
+          content: `When it comes to shopping online, there are many misconceptions about it. Here are the myth busters of online two-wheeler insurance.`,
+        },
+        {
+          type: `NumberedContent`,
+          content: [
+            {
+              heading: `There is No Personal Assistance`,
+              para: [
+                `The fact is, digital-first insurance companies such as ACKO value their customers and strive to provide personalised care; hence, it has robust and constant and 24/7 online assistance. From information about the insurance plan to queries on the types of features, you can get details through the 24/7 customer support section of the website, or you can write to hello@acko.com or call the toll-free number 1800 266 2256.`,
+              ],
+            },
+            {
+              heading: `Buying Two-wheeler Insurance Online is Complicated`,
+              para: [
+                `Buying bike insurance online involves a comparatively simple process than the offline method. All you have to do is visit the website or download the mobile application, share your bike and previous policy details, and insure your vehicle instantly. It is that easy. There is no paperwork involved when you buy two-wheeler insurance at ACKO, emphasizing that buying online bike insurance is an uncomplicated process.`,
+              ],
+            },
+            {
+              heading: `One Needs to be Knowledgeable About Internet`,
+              para: [
+                `A basic understanding of the functioning of a computer and the internet is more than enough to buy insurance online. With internet-based smartphones, one can purchase bike insurance with a few clicks or swipes. Additionally, the number of steps is lower than that of the offline method. At ACKO, you can insure your bike instantly with a few clicks and actions.`,
+              ],
+            },
+            {
+              heading: `Buying Bike Insurance Online is Expensive`,
+              para: [
+                `ACKO is a new-age digital insurer striving to bust the myth that bike insurance is expensive. In fact, ACKO does not have agents or middlemen; hence, there is no commission involved and has reduced operational costs supported by solid digital infrastructure. With a direct-to-customer model and lower operating costs, ACKO can design affordable and comprehensive two-wheeler insurance plans. In addition, online insurance eliminates higher operating costs, resulting in low-cost bike insurance plans.`,
+              ],
+            },
+            {
+              heading: `Online Claim Settlement is Complex`,
+              para: [
+                `ACKO is one of the pioneers in offering instant claim settlements in the auto insurance industry. You can receive instant claim settlement for minor damages within a few hours. It can be a dent in the fuel tank or a broken mirror. At ACKO, all you need to do is, visit the website or the app, upload the pictures of the damaged vehicle and receive on-account payment. You can then repair the damages at a garage of your choice.`,
+                `Even if damages are significant, raise the claim on the website/app by sharing the details of the damaged vehicle with the claims team, and they will guide you through the necessary steps.`,
+              ],
+            },
+            {
+              heading: `Choices Are Limited`,
+              para: [
+                `On the contrary, online lets you compare different insurance plans, add-on covers, and services, giving you the power to choose suitable bike insurance for your vehicle. All you need to do is, share a few details of your bike and get tailor-made insurance plans. Buying bike insurance online provides a wide range of insurance plans and their benefits so that you can make an informed decision.`,
+              ],
+            },
+            {
+              heading: `Online Bike Insurance is Not Safe`,
+              para: [
+                `No one wants to be cheated. Companies such as ACKO are registered with the Insurance Regulatory and Development Authority of India (IRDAI) and have a robust security system in place. You can transact online without any fear since it offers the most secure environment to buy insurance online. `,
+                `The offline method of buying insurance through an agent or middlemen, whom you might not know personally can be hard and their biases may also result in making a wrong choice.`,
+              ],
+            },
+            {
+              heading: `May Misuse Personal Information`,
+              para: [
+                `Insurers such as ACKO work in accordance with Secure Socket Layer (SSL) server protocols. It is designed to perform cryptographic functions to enable a secure environment. The exchange of personal details and transactions on the website happen through the SSL channel and are protected and encrypted with digital signatures, making it a safe mode of buying bike insurance online.`,
+              ],
+            },
+          ],
+        },
+        {
+          type: `Heading`,
+          content: `Conclusion`,
+        },
+        {
+          type: `Paragraph`,
+          content: `The online mode of buying bike insurance is here to make your life easier, hassle-free, and offer affordable insurance plans. Hence, you must consider buying two-wheeler insurance online over the offline method for the convenience and benefits it provides. Online is here to stay and enables you to get access to comprehensive insurance coverage for your two-wheeler at an affordable rate, along with the ease of transacting with the insurer.`,
+        },
+      ],
     },
   },
   {
@@ -1392,7 +1636,129 @@ const resourceData = [
     <br/><br/>
     The article provides an insight into the disadvantages of not securing yourself and your family with a health insurance plan.`,
     moreContent: {
-      contentData: [{}],
+      contentData: [
+        {
+          type: `Heading`,
+          content: `Reasons People Don’t Buy Health Insurance Plan`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Despite being a lifesaver, people do not invest in health insurance policies due to a lack of awareness of its benefits. Here are some of the reasons why people skip buying a medical insurance policy.`,
+        },
+        {
+          type: `SMallHeading`,
+          content: `Lack of Awareness`,
+        },
+        {
+          type: `Paragraph`,
+          content: `The traditional method of buying health insurance is tedious and difficult to understand, thanks to numerous paperwork and complex terms and conditions. Add to that are the agents, leaving you confused about the right plan.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `As medical insurance is not mandatory in India, people do not consider it vital to them and their families. They want returns for their investment. Since health insurance benefits are invisible, people consider it futile to invest in health insurance`,
+        },
+        {
+          type: `Paragraph`,
+          content: `With rising healthcare costs and how the recent Covid-19 pandemic has dealt a blow to the finances of those affected by the high prices, it is prudent to invest in a health insurance plan.`,
+        },
+        {
+          type: `SMallHeading`,
+          content: `Half-hearted Approach to Health`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Young adults, especially salaried individuals, tend to delay their investment in a health insurance plan. While young adults are fitter and healthier than older people, health care during emergencies such as a pandemic or an accident is required by the young and old alike.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `While an employer may provide group medical insurance coverage, that is non-customisable, a customisable individual health insurance plan will certainly come to your rescue if you are laid off from your job when you do not have health insurance to back you during unplanned hospitalisation.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Whether you are young, old, or have a family, it is crucial to secure your finances with a robust health insurance plan as it comes to your rescue during emergencies.`,
+        },
+        {
+          type: `SMallHeading`,
+          content: `Myths About Affordability`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Health insurance requires payment of premiums regularly. It can be yearly or monthly. Several people feel they cannot afford to pay premiums regularly that do not provide any returns. This can be counterproductive since health insurance certainly comes to your rescue during hospitalisation, whether for a minor or major treatment.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Modern digital insurers such as ACKO provide affordable health insurance plans along with a seamless experience while buying, renewing policies, or raising claims. Since all transactions are on the digital platform, the process is much faster and easier than traditional methods.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `With a digital infrastructure and a direct-to-customer model, operational costs are reduced considerably, enabling ACKO to design affordable and comprehensive health insurance plans.`,
+        },
+        {
+          type: `Heading`,
+          content: `Consequences of Not Buying Health Insurance Plan`,
+        },
+        {
+          type: `Paragraph`,
+          content: `
+          Uninsured people suffer significant financial and health consequences as a result of not having health insurance. While there is no rule that you should buy health insurance compulsorily, the risk of being uninsured is significant. Here are the risks involved in not securing yourself and your family with a health insurance policy.`,
+        },
+        {
+          type: `SmallHeading`,
+          content: `High Health Care Expenses`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Without the coverage of medical insurance, an unplanned hospitalisation or a severe accident that requires an expensive treatment plan and/or emergency care can result in high health care expenses. An accident or a cancer diagnosis, or even a broken limb can cost thousands of rupees out-of-pocket.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `With a massive medical bill, you are less likely to save money and more susceptible to a huge debt. It can lead to foregoing necessities and even borrowing money to pay for the medical bill or fund the debt.`,
+        },
+        {
+          type: `SmallHeading`,
+          content: `Unable to Afford Needed Medication`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Because of rising medicine and health care prices, several treatments or medications are incredibly expensive, especially without a health insurance policy to cover the expenses. There are chances that you may defer the treatment or choose lower-cost medical treatment.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Yours and your family’s health is essential; hence, you must secure it with a health insurance plan so that you do not miss out on high-quality health care and medications. Health insurance will protect you financially against high health care costs and drugs required for both planned and unplanned hospitalisation.`,
+        },
+        {
+          type: `SmallHeading`,
+          content: `Worried About Unforeseen Illness`,
+        },
+        {
+          type: `Paragraph`,
+          content: `While you may have control over planned hospitalisation, unplanned hospitalisation due to an unforeseen illness or an accident can severely impact your finances. It is better to be prepared than worry about it when you have to seek medical care without any financial protection of a health insurance plan.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `By securing yourself and your family with health insurance, you can be assured that you are financially protected against an unforeseen illness or even a pandemic such as Covid-19.`,
+        },
+        {
+          type: `SmallHeading`,
+          content: `Loss of Savings`,
+        },
+        {
+          type: `Paragraph`,
+          content: `The government encourages people to buy health insurance policies and provides them with tax exemption on the premiums. By not purchasing a health insurance plan, you could potentially lose your hard-earned money as income tax.`,
+        },
+        {
+          type: `Paragraph`,
+          content: `By investing in a health insurance plan, you can claim tax benefits under Section 80D of the Income Tax Act, thereby saving you money.`,
+        },
+        {
+          type:`Heading`,
+          content:`Conclusion`,
+        },
+        {
+          type: `Paragraph`,
+          content: `Health care is expensive even if you have a health insurance policy. However, those who skip buying a health insurance policy will be at a much more significant disadvantage. The inability to get treatment for health conditions and the massive medical costs are two of the biggest reasons for you to secure yourself and your family with a health insurance plan.`,
+        },
+      ],
     },
   },
   {

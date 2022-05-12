@@ -13,21 +13,21 @@ const sublinks = [
   {
     page: "products",
     links: [
-      { label: "car insurance", icon: <AiOutlineCar />, url: "/car-insurance" },
+      { label: "car insurance", icon: <AiOutlineCar />, url: "car-insurance" },
       {
         label: "bike insurance",
         icon: <RiMotorbikeLine />,
-        url: "/two-wheeler-insurance",
+        url: "two-wheeler-insurance",
       },
       {
         label: "health insurance",
         icon: <RiMentalHealthLine />,
-        url: "/health-insurance",
+        url: "health-insurance",
       },
       {
         label: "group health insurance",
         icon: <RiHealthBookLine />,
-        url: "/group-health-insurance",
+        url: "group-health-insurance",
       },
     ],
   },
@@ -36,7 +36,7 @@ const sublinks = [
     links: [
       {
         label: "all resources",
-        type: `resources`,
+      type: `resources`,
         icon: <BiBookContent />,
         url: "resources",
       },

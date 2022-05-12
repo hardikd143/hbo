@@ -34,7 +34,7 @@ const Content = ({ data }) => {
     return <Paragraph data={content} />;
   }
   if (type === "ParagraphTitled") {
-    return <ParagraphTitled data={content} />;
+    return <ParagraphTitled data={content} isArray={data.isArray} />;
   }
   if (type === "SmallHeading") {
     return <SmallHeading data={content} />;
