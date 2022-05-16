@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import sublinks from "./data/data";
+import {sublinks} from "./data/data";
 import { mainContentData } from "./data/resource";
 import { resourceData } from "./data/resource";
 const ResourceContext = React.createContext();

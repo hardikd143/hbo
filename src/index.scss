@@ -115,6 +115,7 @@ body {
   background: var(--primary2black) !important;
   line-height: 1.5;
   font-size: 0.875rem;
+  transition: all 0.2s linear;
   &::-webkit-scrollbar {
     display: none;
   }

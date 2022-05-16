@@ -4,11 +4,39 @@ import {
   RiGuideLine,
   RiHealthBookLine,
   AiOutlineCar,
+  AiOutlineArrowRight,
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
   MdOutlineArticle,
   BiBookContent,
   BiBook,
+  AiFillYoutube,
 } from "../icons";
 import React from "react";
+const socialLink = [
+  {
+    label: "facebook",
+    icon: <FaFacebookF />,
+  },
+  {
+    label: "instagram",
+    icon: <FaInstagram />,
+  },
+  {
+    label: "linkedin",
+    icon: <FaLinkedinIn />,
+  },
+  {
+    label: "twitter",
+    icon: <FaTwitter />,
+  },
+  {
+    label: "youtube",
+    icon: <AiFillYoutube />,
+  },
+];
 const sublinks = [
   {
     page: "products",
@@ -36,7 +64,7 @@ const sublinks = [
     links: [
       {
         label: "all resources",
-      type: `resources`,
+        type: `resources`,
         icon: <BiBookContent />,
         url: "resources",
       },
@@ -57,4 +85,4 @@ const sublinks = [
   },
 ];
 
-export default sublinks;
+export { sublinks, socialLink };

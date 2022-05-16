@@ -11,6 +11,7 @@ import {
   AiOutlineCar,
   AiOutlineArrowRight,
   AiOutlineLink,
+  AiFillYoutube,
 } from "react-icons/ai";
 import {
   MdOutlineArticle,
@@ -18,7 +19,13 @@ import {
   MdOutlineKeyboardArrowLeft,
 } from "react-icons/md";
 import { BiBookContent, BiBook } from "react-icons/bi";
-import { FaCarSide } from "react-icons/fa";
+import {
+  FaCarSide,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 export {
   RiMotorbikeLine,
@@ -29,6 +36,7 @@ export {
   RiHealthBookLine,
   AiOutlineCar,
   AiOutlineArrowRight,
+  AiFillYoutube,
   AiOutlineLink,
   MdOutlineArticle,
   MdOutlineKeyboardArrowRight,
@@ -36,6 +44,10 @@ export {
   BiBookContent,
   BiBook,
   FaCarSide,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
   BsFillMoonFill,
   BsFillSunFill,
 };
