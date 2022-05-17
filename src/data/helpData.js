@@ -95,26 +95,6 @@ const helpData = [
       5) Once the cashless rearticleNamest is received by the TPA, they will process the cashless and respond back to the hospital in 1-2 hours.`,
   },
   {
-    id: "ekroYKxi153",
-    articleName: "How can I raise a Reimbursement Claim rearticleNamest?",
-    articleText: `To raise a reimbursement rearticleNamest, you can do the following:
-      
-      Option 1: Using the Acko App 
-      Step 1: Open the App and select your health plan 
-      Step 2: Click on Claims button 
-      Step 3: Click on File a claim 
-      Step 4: Enter details of the hospitalisation 
-      Step 5: Upload a clear picture of each document 
-      Step 6: Submit the documents 
-      Step 7: Track the claim status in the app 
-      
-      Option 2: Emailing documents 
-      Step 1:  Ensure that the email subject line mentions the word “reimbursement rearticleNamest” and the claimed amount. Also mention your policy number and the claiming member details in the body of the mail. 
-      Step 2: Attach all the documents and send the mail to health@acko.com. 
-      
-      Note: You will need to submit the following documents: Scanned copy of Final bill with breakups (Mandatory) Scanned copy of Original Hospital Discharge Summary (Mandatory) Diagnostic Report / Investigation Report / Consultation Paper / Prescription (Mandatory) Bank account details - Account number, account holder name and IFSC code. You can scan and send the first page of the passbook/ cancelled chearticleName with these details or fill these details directly in the app Scanned copy of Pan Card & Aadhar Card (if claim is above Rs. 1 Lakh) (Mandatory)`,
-  },
-  {
     id: "elroYKxi154",
     articleName: "How will I know the status of my claim rearticleNamest?",
     articleText: `You will get regular status updates regarding your claim rearticleNamest via SMS and email. Alternatively, you can call our toll-free number 1800 266 2256 to check your claim's status. You can also view the claim status on the Acko app`,
